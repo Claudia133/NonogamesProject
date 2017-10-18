@@ -15,7 +15,7 @@ public class MainMenuActivity extends AppCompatActivity {
         Button playButton = (Button) findViewById(R.id.button);
         Button createPuzzleButton = (Button) findViewById(R.id.button2);
         Button changeThemeButton = (Button) findViewById(R.id.button3);
-        Button loginButton = (Button) findViewById(R.id.button4);
+        Button loginButton = (Button) findViewById(R.id.button4)
 
         playButton.setOnClickListener (new View.OnClickListener() {
             @Override
