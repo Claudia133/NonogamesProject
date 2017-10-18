@@ -23,12 +23,23 @@ public class MainMenuActivity extends AppCompatActivity {
                 goToLevelSelectionActivity();
             }
         } );
-
+        loginButton.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToLoginActivity();
+            }
+        } );
     }
 
     private void goToLevelSelectionActivity()
     {
         Intent intent = new Intent(this, LevelSelection.class);
+        startActivity(intent);
+    }
+
+    private void goToLoginActivity()
+    {
+        Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
 }
