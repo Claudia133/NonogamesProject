@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LevelSelection" />
-        <activity android:name=".Login"></activity>
+        <activity android:name=".Login" />
+        <activity android:name=".CreatePuzzle"></activity>
     </application>
 
 </manifest>
