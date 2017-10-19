@@ -29,6 +29,12 @@ public class MainMenuActivity extends AppCompatActivity {
                 goToLoginActivity();
             }
         } );
+        createPuzzleButton.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToCreatePuzzleActivity();
+            }
+        } );
     }
 
     private void goToLevelSelectionActivity()
@@ -40,6 +46,12 @@ public class MainMenuActivity extends AppCompatActivity {
     private void goToLoginActivity()
     {
         Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
+
+    private void goToCreatePuzzleActivity()
+    {
+        Intent intent = new Intent(this, CreatePuzzle.class);
         startActivity(intent);
     }
 }
