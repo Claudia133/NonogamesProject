@@ -6,4 +6,88 @@
     android:layout_height="match_parent"
     tools:context="com.example.claudiaalamillo.nonogamesproject.LevelSelection">
 
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:text="Easy"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="99dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0/20"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="98dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0/20"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="103dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0/20"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="192dp"
+        android:layout_height="44dp"
+        android:text="Custom"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="195dp"
+        android:layout_height="44dp"
+        android:text="Timed"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="195dp"
+        android:layout_height="47dp"
+        android:text="Hard"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="195dp"
+        android:layout_height="47dp"
+        android:text="Medium"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="101dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0/20"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="140dp" />
+
 </android.support.constraint.ConstraintLayout>
