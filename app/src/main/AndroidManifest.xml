@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".LevelSelection" />
         <activity android:name=".Login" />
-        <activity android:name=".CreatePuzzle"></activity>
+        <activity android:name=".CreatePuzzle" />
+        <activity android:name=".EasyLibraryActivity"></activity>
     </application>
 
 </manifest>
