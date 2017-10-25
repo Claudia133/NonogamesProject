@@ -12,7 +12,7 @@ public class LevelSelection extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_selection);
-        Button backToMainMenuButton = (Button) findViewById(R.id.button7);
+        Button backToMainMenuButton = (Button) findViewById(R.id.button13);
 
         backToMainMenuButton.setOnClickListener (new View.OnClickListener() {
             @Override
