@@ -12,7 +12,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button goBackButton = (Button) findViewById(R.id.go);
+        Button goBackButton = (Button) findViewById(R.id.button6);
         Button loginButton = (Button) findViewById(R.id.button5);
 
         goBackButton.setOnClickListener (new View.OnClickListener() {

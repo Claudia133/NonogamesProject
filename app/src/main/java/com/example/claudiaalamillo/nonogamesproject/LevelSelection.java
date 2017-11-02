@@ -13,11 +13,11 @@ public class LevelSelection extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_selection);
         Button goBackButton = (Button) findViewById(R.id.button13);
-        Button easyButton = (Button) findViewById(R.id.button8);
-        Button mediumButton = (Button) findViewById(R.id.button12);
-        Button hardButton = (Button) findViewById(R.id.button11);
-        Button timedButton = (Button) findViewById(R.id.button10);
-        Button customButton = (Button) findViewById(R.id.button9);
+//        Button easyButton = (Button) findViewById(R.id.button8);
+//        Button mediumButton = (Button) findViewById(R.id.button12);
+//        Button hardButton = (Button) findViewById(R.id.button11);
+//        Button timedButton = (Button) findViewById(R.id.button10);
+//        Button customButton = (Button) findViewById(R.id.button9);
 
         goBackButton.setOnClickListener (new View.OnClickListener() {
             @Override
@@ -25,12 +25,12 @@ public class LevelSelection extends AppCompatActivity {
                 goToMainMenuActivity();
             }
         } );
-        easyButton.setOnClickListener (new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goToEasyLibraryActivity();
-            }
-        } );
+//        easyButton.setOnClickListener (new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                goToEasyLibraryActivity();
+//            }
+//        } );
     }
 
     private void goToMainMenuActivity()
@@ -39,9 +39,9 @@ public class LevelSelection extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void goToEasyLibraryActivity()
-    {
-        Intent intent = new Intent(this, EasyLibraryActivity.class);
-        startActivity(intent);
-    }
+//    private void goToEasyLibraryActivity()
+//    {
+//        Intent intent = new Intent(this, EasyLibraryActivity.class);
+//        startActivity(intent);
+//    }
 }
