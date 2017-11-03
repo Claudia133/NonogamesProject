@@ -13,7 +13,7 @@ public class LevelSelection extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_selection);
         Button goBackButton = (Button) findViewById(R.id.button13);
-//        Button easyButton = (Button) findViewById(R.id.button8);
+        Button easyButton = (Button) findViewById(R.id.button);
 //        Button mediumButton = (Button) findViewById(R.id.button12);
 //        Button hardButton = (Button) findViewById(R.id.button11);
 //        Button timedButton = (Button) findViewById(R.id.button10);
@@ -39,9 +39,9 @@ public class LevelSelection extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    private void goToEasyLibraryActivity()
-//    {
-//        Intent intent = new Intent(this, EasyLibraryActivity.class);
-//        startActivity(intent);
-//    }
+    private void goToEasyLibraryActivity()
+    {
+        Intent intent = new Intent(this, EasyLibraryActivity.class);
+        startActivity(intent);
+    }
 }
