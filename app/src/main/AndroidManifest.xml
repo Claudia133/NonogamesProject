@@ -19,7 +19,8 @@
         <activity android:name=".LevelSelection" />
         <activity android:name=".Login" />
         <activity android:name=".CreatePuzzle" />
-        <activity android:name=".EasyLibraryActivity"></activity>
+        <activity android:name=".EasyLibraryActivity" />
+        <activity android:name=".PuzzleBoard" />
     </application>
 
 </manifest>
