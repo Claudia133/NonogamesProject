@@ -25,12 +25,12 @@ public class LevelSelection extends AppCompatActivity {
                 goToMainMenuActivity();
             }
         } );
-//        easyButton.setOnClickListener (new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                goToEasyLibraryActivity();
-//            }
-//        } );
+        easyButton.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToEasyLibraryActivity();
+            }
+        } );
     }
 
     private void goToMainMenuActivity()
