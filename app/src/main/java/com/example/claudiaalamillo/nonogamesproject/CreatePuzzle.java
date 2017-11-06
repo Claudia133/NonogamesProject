@@ -15,6 +15,7 @@ public class CreatePuzzle extends AppCompatActivity {
         setContentView(R.layout.activity_create_puzzle);
 
         Button backButton = (Button) findViewById(R.id.button7);
+        Button nextButton = (Button) findViewById(R.id.button6);
 
         backButton.setOnClickListener (new View.OnClickListener() {
             @Override
