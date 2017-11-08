@@ -14,14 +14,22 @@ public class EasyLibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_library);
 
-        ImageButton board1 = (ImageButton)findViewById(R.id.imageButton);
+      //  ImageButton board1 = (ImageButton)findViewById(R.id.imageButton);
 
-        board1.setOnClickListener (new View.OnClickListener() {
+        /*board1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToPuzzleBoard1();
             }
-        } );
+        } );*/
+
+
+        PixelGridView pixelGrid = new PixelGridView(this);
+        pixelGrid.setNumColumns(9);
+        pixelGrid.setNumRows(9);
+
+        setContentView(pixelGrid);
+
     }
 
     private void goToPuzzleBoard1()
