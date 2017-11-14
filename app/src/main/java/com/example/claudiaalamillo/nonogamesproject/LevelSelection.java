@@ -9,7 +9,8 @@ import android.content.Intent;
 public class LevelSelection extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_selection);
         Button goBackButton = (Button) findViewById(R.id.button13);
@@ -18,18 +19,16 @@ public class LevelSelection extends AppCompatActivity {
         Button hardButton = (Button) findViewById(R.id.button10);
         Button timedButton = (Button) findViewById(R.id.button11);
         Button customButton = (Button) findViewById(R.id.button12);
-//        Button mediumButton = (Button) findViewById(R.id.button12);
-//        Button hardButton = (Button) findViewById(R.id.button11);
-//        Button timedButton = (Button) findViewById(R.id.button10);
-//        Button customButton = (Button) findViewById(R.id.button9);
 
-        goBackButton.setOnClickListener (new View.OnClickListener() {
+        goBackButton.setOnClickListener (new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
                 goToMainMenuActivity();
             }
         } );
-        easyButton.setOnClickListener (new View.OnClickListener() {
+        easyButton.setOnClickListener (new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
                 goToEasyLibraryActivity();

@@ -1,78 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <arrray name="easy1_solution">
-        <integer-array name="easy1_row1">
-            <item>1</item>
-            <item>1</item>
-            <item>0</item>
-            <item>1</item>
-            <item>1</item>
-        </integer-array>
-        <integer-array name="easy1_row2">
-            <item>1</item>
-            <item>0</item>
-            <item>1</item>
-            <item>0</item>
-            <item>1</item>
-        </integer-array>
-        <integer-array name="easy1_row3">
-            <item>1</item>
-            <item>0</item>
-            <item>0</item>
-            <item>0</item>
-            <item>1</item>
-        </integer-array>
-        <integer-array name="easy1_row4">
-            <item>0</item>
-            <item>1</item>
-            <item>0</item>
-            <item>1</item>
-            <item>0</item>
-        </integer-array>
-        <integer-array name="easy1_row5">
-            <item>0</item>
-            <item>0</item>
-            <item>1</item>
-            <item>0</item>
-            <item>0</item>
-        </integer-array>
-    </arrray>
-    <arrray name="easy2_solution">
-        <integer-array name="easy2_row1">
-            <item>1</item>
-            <item>1</item>
-            <item>1</item>
-            <item>1</item>
-            <item>1</item>
-        </integer-array>
-        <integer-array name="easy2_row2">
-            <item>1</item>
-            <item>0</item>
-            <item>1</item>
-            <item>0</item>
-            <item>1</item>
-        </integer-array>
-        <integer-array name="easy2_row3">
-            <item>1</item>
-            <item>1</item>
-            <item>1</item>
-            <item>1</item>
-            <item>1</item>
-        </integer-array>
-        <integer-array name="easy2_row4">
-            <item>0</item>
-            <item>1</item>
-            <item>1</item>
-            <item>1</item>
-            <item>0</item>
-        </integer-array>
-        <integer-array name="easy2_row5">
-            <item>0</item>
-            <item>1</item>
-            <item>1</item>
-            <item>1</item>
-            <item>0</item>
-        </integer-array>
-    </arrray>
-
+    <array name="easy1_solution">
+        <item>
+            <integer-array name="easy1_row1">
+                <item>1</item>
+                <item>1</item>
+                <item>0</item>
+                <item>1</item>
+                <item>1</item>
+            </integer-array>
+        </item>
+        <item>
+            <integer-array name="easy1_row2">
+                <item>1</item>
+                <item>0</item>
+                <item>1</item>
+                <item>0</item>
+                <item>1</item>
+            </integer-array>
+        </item>
+        <item>
+            <integer-array name="easy1_row3">
+                <item>1</item>
+                <item>0</item>
+                <item>0</item>
+                <item>0</item>
+                <item>1</item>
+            </integer-array>
+        </item>
+        <item>
+            <integer-array name="easy1_row4">
+                <item>0</item>
+                <item>1</item>
+                <item>0</item>
+                <item>1</item>
+                <item>0</item>
+            </integer-array>
+        </item>
+        <item>
+            <integer-array name="easy1_row5">
+                <item>0</item>
+                <item>0</item>
+                <item>1</item>
+                <item>0</item>
+                <item>0</item>
+            </integer-array>
+        </item>
+    </array>
+    <array name="easy2_solution">
+        <item>
+            <integer-array name="easy2_row1">
+                <item>1</item>
+                <item>1</item>
+                <item>1</item>
+                <item>1</item>
+                <item>1</item>
+            </integer-array>
+        </item>
+        <item>
+            <integer-array name="easy2_row2">
+                <item>1</item>
+                <item>0</item>
+                <item>1</item>
+                <item>0</item>
+                <item>1</item>
+            </integer-array>
+        </item>
+        <item>
+            <integer-array name="easy2_row3">
+                <item>1</item>
+                <item>1</item>
+                <item>1</item>
+                <item>1</item>
+                <item>1</item>
+            </integer-array>
+        </item>
+        <item>
+            <integer-array name="easy2_row4">
+                <item>0</item>
+                <item>1</item>
+                <item>1</item>
+                <item>1</item>
+                <item>0</item>
+            </integer-array>
+        </item>
+        <item>
+            <integer-array name="easy2_row5">
+                <item>0</item>
+                <item>1</item>
+                <item>1</item>
+                <item>1</item>
+                <item>0</item>
+            </integer-array>
+        </item>
+    </array>
 </resources>
