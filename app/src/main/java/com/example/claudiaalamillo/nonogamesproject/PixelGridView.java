@@ -8,6 +8,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import java.util.*;
+
 /**
  * Created by joaoaguilera on 11/7/17.
  */
@@ -67,6 +69,19 @@ public class PixelGridView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         canvas.drawColor(Color.WHITE);
+        int[] testEasy0 = getResources().getIntArray(R.array.row0);
+        int[] testEasy1 = getResources().getIntArray(R.array.row1);
+        int[] testEasy2 = getResources().getIntArray(R.array.row2);
+        int[] testEasy3 = getResources().getIntArray(R.array.row3);
+        int[] testEasy4 = getResources().getIntArray(R.array.row4);
+
+        String easy0 = Arrays.toString(testEasy0);
+        String easy1 = Arrays.toString(testEasy1);
+        String easy2 = Arrays.toString(testEasy2);
+        String easy3 = Arrays.toString(testEasy3);
+        String easy4 = Arrays.toString(testEasy4);
+
+
 
         if (numColumns == 0 || numRows == 0) {
             return;
@@ -94,8 +109,14 @@ public class PixelGridView extends View {
                 }
 
                 blackPaint.setColor(Color.BLACK);
-                blackPaint.setTextSize(20);
-                canvas.drawText("Some Text", 10, 25, blackPaint);
+                blackPaint.setTextSize(65);
+
+
+                canvas.drawText(easy0, 10, 400, blackPaint);
+                canvas.drawText(easy1, 10, 700, blackPaint);
+                canvas.drawText(easy2, 10, 1000, blackPaint);
+                canvas.drawText(easy3, 10, 1300, blackPaint);
+                canvas.drawText(easy4, 10, 1600, blackPaint);
             }
 
 
@@ -103,6 +124,8 @@ public class PixelGridView extends View {
 
 
         }
+
+//        int[] testEasy1 = getResources().getIntArray();
 
         for (int i = 1; i < numColumns; i++) {
             canvas.drawLine(i * cellWidth, 0, i * cellWidth, height, blackPaint);
