@@ -104,6 +104,8 @@ public class PixelGridView extends View {
 
         }
 
+//        int[] testEasy1 = getResources().getIntArray();
+
         for (int i = 1; i < numColumns; i++) {
             canvas.drawLine(i * cellWidth, 0, i * cellWidth, height, blackPaint);
         }

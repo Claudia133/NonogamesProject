@@ -12,6 +12,8 @@ class Easy1Solution {
     List<List<Integer>> columnHints = new ArrayList<List<Integer>>(5);
     int [][] solution = new int[5][5];
 
+
+
     private void setRowHints()
     {
         for( int i = 0; i < 5; i++){
