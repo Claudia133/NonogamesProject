@@ -43,8 +43,6 @@ public class EasyLibraryActivity extends AppCompatActivity {
 
         setContentView(pixelGrid);
 
-
-//        File xmlFile = new File("src\\main\\java\\com\\example\\claudiaalamillo\\nonogamesproject\\easylib.xml");
 //        InputStream is = new FileInputStream(xmlFile);
 
 
