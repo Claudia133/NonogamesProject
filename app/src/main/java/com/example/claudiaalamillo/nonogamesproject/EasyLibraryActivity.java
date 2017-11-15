@@ -38,8 +38,8 @@ public class EasyLibraryActivity extends AppCompatActivity {
 
 
         PixelGridView pixelGrid = new PixelGridView(this);
-        pixelGrid.setNumColumns(5);
-        pixelGrid.setNumRows(5);
+        pixelGrid.setNumColumns(6);
+        pixelGrid.setNumRows(6);
 
         setContentView(pixelGrid);
 

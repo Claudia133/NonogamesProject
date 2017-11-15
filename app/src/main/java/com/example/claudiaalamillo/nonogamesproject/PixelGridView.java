@@ -69,18 +69,30 @@ public class PixelGridView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         canvas.drawColor(Color.WHITE);
-        int[] testEasy0 = getResources().getIntArray(R.array.row0);
-        int[] testEasy1 = getResources().getIntArray(R.array.row1);
-        int[] testEasy2 = getResources().getIntArray(R.array.row2);
-        int[] testEasy3 = getResources().getIntArray(R.array.row3);
-        int[] testEasy4 = getResources().getIntArray(R.array.row4);
+        int[] testRowEasy0 = getResources().getIntArray(R.array.row0);
+        int[] testRowEasy1 = getResources().getIntArray(R.array.row1);
+        int[] testRowEasy2 = getResources().getIntArray(R.array.row2);
+        int[] testRowEasy3 = getResources().getIntArray(R.array.row3);
+        int[] testRowEasy4 = getResources().getIntArray(R.array.row4);
 
-        String easy0 = Arrays.toString(testEasy0);
-        String easy1 = Arrays.toString(testEasy1);
-        String easy2 = Arrays.toString(testEasy2);
-        String easy3 = Arrays.toString(testEasy3);
-        String easy4 = Arrays.toString(testEasy4);
+        int[] colEasy0 = getResources().getIntArray(R.array.col0);
+        int[] colEasy1 = getResources().getIntArray(R.array.col1);
+        int[] colEasy2 = getResources().getIntArray(R.array.col2);
+        int[] colEasy3 = getResources().getIntArray(R.array.col3);
+        int[] colEasy4 = getResources().getIntArray(R.array.col4);
 
+
+        String easyRow0 = Arrays.toString(testRowEasy0);
+        String easyRow1 = Arrays.toString(testRowEasy1);
+        String easyRow2 = Arrays.toString(testRowEasy2);
+        String easyRow3 = Arrays.toString(testRowEasy3);
+        String easyRow4 = Arrays.toString(testRowEasy4);
+
+        String easyCol0 = Arrays.toString(colEasy0);
+        String easyCol1 = Arrays.toString(colEasy1);
+        String easyCol2 = Arrays.toString(colEasy2);
+        String easyCol3 = Arrays.toString(colEasy3);
+        String easyCol4 = Arrays.toString(colEasy4);
 
 
         if (numColumns == 0 || numRows == 0) {
@@ -109,14 +121,21 @@ public class PixelGridView extends View {
                 }
 
                 blackPaint.setColor(Color.BLACK);
-                blackPaint.setTextSize(65);
+                blackPaint.setTextSize(50);
 
 
-                canvas.drawText(easy0, 10, 400, blackPaint);
-                canvas.drawText(easy1, 10, 700, blackPaint);
-                canvas.drawText(easy2, 10, 1000, blackPaint);
-                canvas.drawText(easy3, 10, 1300, blackPaint);
-                canvas.drawText(easy4, 10, 1600, blackPaint);
+                canvas.drawText(easyRow0, 15, 400, blackPaint);
+                canvas.drawText(easyRow1, 15, 650, blackPaint);
+                canvas.drawText(easyRow2, 15, 900, blackPaint);
+                canvas.drawText(easyRow3, 15, 1150, blackPaint);
+                canvas.drawText(easyRow4, 15, 1350, blackPaint);
+
+                canvas.drawText(easyCol0, 250, 50, blackPaint);
+                canvas.drawText(easyCol1, 400, 50, blackPaint);
+                canvas.drawText(easyCol2, 570, 50, blackPaint);
+                canvas.drawText(easyCol3, 800, 50, blackPaint);
+                canvas.drawText(easyCol4, 1000, 50, blackPaint);
+
             }
 
 
