@@ -132,7 +132,7 @@ public class PixelGridView extends View {
 
                 canvas.drawText(easyCol0, 250, 50, blackPaint);
                 canvas.drawText(easyCol1, 400, 50, blackPaint);
-                canvas.drawText(easyCol2, 570, 50, blackPaint);
+                canvas.drawText(easyCol2, 580, 50, blackPaint);
                 canvas.drawText(easyCol3, 800, 50, blackPaint);
                 canvas.drawText(easyCol4, 1000, 50, blackPaint);
 
@@ -144,7 +144,6 @@ public class PixelGridView extends View {
 
         }
 
-//        int[] testEasy1 = getResources().getIntArray();
 
         for (int i = 1; i < numColumns; i++) {
             canvas.drawLine(i * cellWidth, 0, i * cellWidth, height, blackPaint);

@@ -33,15 +33,16 @@ public class EasyLibraryActivity extends AppCompatActivity {
 //                pixelGrid.setNumRows(5);
 //
 //                setContentView(pixelGrid);
+                goToPuzzleBoard1();
             }
         });
 
 
-        PixelGridView pixelGrid = new PixelGridView(this);
-        pixelGrid.setNumColumns(6);
-        pixelGrid.setNumRows(6);
-
-        setContentView(pixelGrid);
+//        PixelGridView pixelGrid = new PixelGridView(this);
+//        pixelGrid.setNumColumns(6);
+//        pixelGrid.setNumRows(6);
+//
+//        setContentView(pixelGrid);
 
 //        InputStream is = new FileInputStream(xmlFile);
 
@@ -52,7 +53,12 @@ public class EasyLibraryActivity extends AppCompatActivity {
 
     private void goToPuzzleBoard1()
     {
-        Intent intent = new Intent(this, PuzzleBoard1.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, PuzzleBoard1.class);
+//        startActivity(intent);
+        PixelGridView pixelGrid = new PixelGridView(this);
+        pixelGrid.setNumColumns(6);
+        pixelGrid.setNumRows(6);
+
+        setContentView(pixelGrid);
     }
 }
