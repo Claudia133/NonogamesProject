@@ -18,6 +18,7 @@ public class PixelGridView extends View {
     private int numColumns, numRows;
     private int cellWidth, cellHeight;
     private Paint blackPaint = new Paint();
+    private Paint redPaint = new Paint();
     private boolean[][] cellChecked;
 
     public PixelGridView(Context context) {
@@ -94,6 +95,7 @@ public class PixelGridView extends View {
         String easyCol3 = Arrays.toString(colEasy3);
         String easyCol4 = Arrays.toString(colEasy4);
 
+        redPaint.setColor(Color.RED);
 
         if (numColumns == 0 || numRows == 0) {
             return;
@@ -164,6 +166,19 @@ public class PixelGridView extends View {
             invalidate();
         }
 
+        return true;
+    }
+
+    public boolean isSolution(MotionEvent event)
+    {
+        // check if each square is checked and compare to the hints
+        for (int row = 0; row < numRows; row++)
+        {
+            for (int col = 0; col < numColumns; col++)
+            {
+
+            }
+        }
         return true;
     }
 }
