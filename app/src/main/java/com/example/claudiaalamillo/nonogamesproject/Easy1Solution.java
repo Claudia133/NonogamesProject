@@ -76,5 +76,9 @@ class Easy1Solution {
         solution[4][2] = 1;
     }
 
+    private int[][] getSolution()
+    {
+        return solution;
+    }
 }
 
