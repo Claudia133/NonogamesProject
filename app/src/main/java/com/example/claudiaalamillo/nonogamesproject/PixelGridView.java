@@ -75,6 +75,7 @@ public class PixelGridView extends View {
         cellHeight = getHeight() / numRows;
 
         cellChecked = new boolean[numColumns][numRows];
+//        selectableGrid = new boolean[numColumns][numRows];
 
         invalidate();
     }
@@ -93,7 +94,7 @@ public class PixelGridView extends View {
         //draws black selection
 
 
-        InputStream ls = this.getResources().openRawResource(R.raw.p1); //tells system which file to open and read
+        InputStream ls = this.getResources().openRawResource(R.raw.p1);
         String[] g = getGridData(ls);
 
         for (int i = 0; i < numColumns; i++) {
@@ -113,17 +114,14 @@ public class PixelGridView extends View {
 
                 r = new Rect((int) left, (int) top, (int) right, (int) bottom);
 
-               /* canvas.drawRect(r,
-                        blackPaint);
-                }*/
+//                canvas.drawRect(left, top, right, bottom, blackPaint);
+//                }
 
                 bluePaint.setColor((Color.BLUE));
                 bluePaint.setTextSize((80));
 
-
-
-                String x = g[j].charAt(i) + "";
-               // Log.d("Before Crash", x);
+//                String x = g[j].charAt(i) + "";
+                String x = Character.toString(g[j].charAt(i));
                 String t = g[j];
 
 
@@ -133,20 +131,27 @@ public class PixelGridView extends View {
                 } else {
 
                     canvas.drawText(x, r.centerX() - 20, r.centerY() + 25, bluePaint);
+//                    selectableGrid[i][j] = false;
+                    cellChecked[i][j] = false;
                 }
-
-
-
-
             }
-
-
-
-
-
         }
 
+        for (int c = 2; c < numColumns; c++)
+        {
+            for (int r = 1; r < numRows; r++)
+            {
+                if (cellChecked[c][r])
+                {
+                    float left = c * cellWidth;
+                    float top = r * cellHeight;
+                    float right = (c + 1) * cellWidth;
+                    float bottom = (r + 1) * cellHeight;
 
+                    canvas.drawRect(left, top, right, bottom, blackPaint);
+                }
+            }
+        }
         //draws vertical line
 
         for (int i = 1; i < numColumns; i++) {
@@ -214,15 +219,30 @@ public class PixelGridView extends View {
 
                 String t = lines[i].replaceAll("\\s+","");
                 l[i] = t;
-
-
         }
 
         return l;
 
     }
 
+    public boolean isSolution(MotionEvent event)
+    {
+        // check if each square is checked and compare to the hints using cellChecked boolean 2D array
 
+        Easy1Solution easysol = new Easy1Solution();
 
+        int [][] easySol = easysol.solution;
+        for (int row = 0; row < numRows; row++)
+        {
+            for (int col = 0; col < numColumns; col++)
+            {
+                if ((easySol[row][col] != 1) && (cellChecked[row][col] == false))
+                {
+                    return false;
+                }
+            }
+        }
 
+        return true;
+    }
 }
