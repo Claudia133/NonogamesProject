@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name = "row0">
+        <item>2</item>
+        <item>2</item>
+    </array>
+    <array name = "row1">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </array>
+    <array name="row2">
+        <item>1</item>
+        <item>1</item>
+    </array>
+    <array name="row3">
+        <item>1</item>
+        <item>1</item>
+    </array>
+    <array name="row4">
+        <item>1</item>
+    </array>
+</resources>
