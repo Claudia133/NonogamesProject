@@ -102,15 +102,20 @@ public class PixelGridView extends View {
 
 
             for (int j = 0; j < numRows; j++) {
+
                 // if (cellChecked[i][j]) {
 
-                //String t = g[j];
+
                 float left = i * cellWidth;
                 float top = j * cellHeight;
                 float right = (i + 1) * cellWidth;
                 float bottom = (j + 1) * cellHeight;
 
-                r = new Rect((int)left,(int) top, (int)right,(int) bottom);
+                r = new Rect((int) left, (int) top, (int) right, (int) bottom);
+
+               /* canvas.drawRect(r,
+                        blackPaint);
+                }*/
 
                 bluePaint.setColor((Color.BLUE));
                 bluePaint.setTextSize((80));
@@ -119,9 +124,6 @@ public class PixelGridView extends View {
 
                 String t = g[j];
 
-                /*canvas.drawRect(left, top,
-                        right, bottom,
-                        blackPaint);*/
 
                 if (x.equals("-")) {
 
