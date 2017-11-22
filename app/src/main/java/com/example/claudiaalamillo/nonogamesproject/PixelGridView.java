@@ -93,7 +93,7 @@ public class PixelGridView extends View {
         //draws black selection
 
 
-        InputStream ls = this.getResources().openRawResource(R.raw.p1);
+        InputStream ls = this.getResources().openRawResource(R.raw.p1); //tells system which file to open and read
         String[] g = getGridData(ls);
 
         for (int i = 0; i < numColumns; i++) {
@@ -120,8 +120,10 @@ public class PixelGridView extends View {
                 bluePaint.setColor((Color.BLUE));
                 bluePaint.setTextSize((80));
 
-                String x = g[j].charAt(i) + "";
 
+
+                String x = g[j].charAt(i) + "";
+               // Log.d("Before Crash", x);
                 String t = g[j];
 
 
