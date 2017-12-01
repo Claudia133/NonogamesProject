@@ -24,7 +24,6 @@ public class EasyLibraryActivity extends AppCompatActivity {
         } );
 
 
-
     }
 
     private void goToPuzzleBoard1()

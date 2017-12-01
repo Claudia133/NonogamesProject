@@ -1,0 +1,23 @@
+ Volume in drive C is OS
+ Volume Serial Number is 3817-631B
+
+ Directory of C:\Users\Inuya\Desktop\NonogamesProject
+
+11/30/2017  08:25 PM    <DIR>          .
+11/30/2017  08:25 PM    <DIR>          ..
+11/11/2017  02:16 PM               127 .gitignore
+11/27/2017  03:55 PM    <DIR>          .gradle
+11/30/2017  08:24 PM    <DIR>          .idea
+11/29/2017  01:01 PM    <DIR>          app
+11/28/2017  08:39 PM    <DIR>          build
+11/27/2017  03:52 PM               521 build.gradle
+11/11/2017  02:16 PM    <DIR>          gradle
+11/11/2017  02:16 PM               747 gradle.properties
+11/11/2017  02:16 PM             5,131 gradlew
+11/11/2017  02:16 PM             2,404 gradlew.bat
+11/11/2017  02:16 PM               489 local.properties
+11/11/2017  02:17 PM               870 NonogamesProject.iml
+11/11/2017  02:16 PM                16 settings.gradle
+11/30/2017  08:25 PM                 0 test.txt
+               9 File(s)         10,305 bytes
+               7 Dir(s)  675,250,802,688 bytes free

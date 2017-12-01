@@ -8,14 +8,19 @@ import android.renderscript.ScriptGroup;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+//import android;
 import android.graphics.Rect;
 import android.util.Log;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+
+//import android.widget.*;
 
 /**
  * Created by joaoaguilera on 11/7/17.
@@ -30,6 +35,10 @@ public class PixelGridView extends View {
     private boolean[][] selectableGrid;
     private String [][] content = new String[numRows][numColumns];
 
+    //    ViewGroup layout = (ViewGroup) findViewById(R.id.view1);
+//    TextView tv = new TextView(this);
+//    ViewGroup layout = (ViewGroup) findViewById(R.id.view1);
+//    TextView tv = new TextView(this);
 
 
     public PixelGridView(Context context) {
@@ -40,6 +49,13 @@ public class PixelGridView extends View {
         super(context, attrs);
         blackPaint.setStyle(Paint.Style.FILL_AND_STROKE);
         bluePaint.setStyle((Paint.Style.FILL_AND_STROKE));
+
+//        ViewGroup layout = (ViewGroup) findViewById(R.id.view1);
+//        TextView tv = new TextView(context);
+//        tv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+//        tv.setText("*** Added stuff");
+//        layout.addView(tv);
+
     }
 
     public void setNumColumns(int numColumns) {
