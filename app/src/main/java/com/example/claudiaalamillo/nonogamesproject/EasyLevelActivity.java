@@ -1,6 +1,7 @@
 package com.example.claudiaalamillo.nonogamesproject;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -14,23 +15,35 @@ public class EasyLevelActivity extends AppCompatActivity {
     //VARIABLES
     private static final int COLUMNS = 5, ROWS = 5;
     private static final int DIMENSIONS = ROWS * COLUMNS;
-    private int[] solution = {1, 1, 0, 1, 1,
-            1, 0, 1, 0, 1,
-            1, 0, 0, 0, 1,
-            0, 1, 0, 1, 0,
-            0, 0, 1, 0, 0};
+    private int[] solution = new int[DIMENSIONS];
+
     //current state of the board, initialize to 0
     private int[] currentState = new int[DIMENSIONS];
-    //row hints
+
+    //row hints & column hints to display
     TextView r1, r2, r3, r4, r5;
-    //column hints
     TextView c1, c2, c3, c4, c5;
-    //current state of the
+
+    //current state of the grid/board
     ImageView[] grid = new ImageView[DIMENSIONS];
+
+    //string arrays to store hints
+    String[] row_hints = new String[ROWS];
+    String[] col_hints = new String[COLUMNS];
 
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_level);
+
+        //get puzzle id
+        Bundle b = getIntent().getExtras();
+        int puzzle_num = -1;
+        if(b != null){
+            puzzle_num = b.getInt("id");
+        }
+
+        //see method
+        setHintsAndSolution(puzzle_num);
 
         //connect row hint variables with id's in xml
         r1 = (TextView) findViewById(R.id.r1_hints);
@@ -39,11 +52,11 @@ public class EasyLevelActivity extends AppCompatActivity {
         r4 = (TextView) findViewById(R.id.r4_hints);
         r5 = (TextView) findViewById(R.id.r5_hints);
 
-        r1.setText("2 2");
-        r2.setText("1 1 1");
-        r3.setText("1 1");
-        r4.setText("1 1");
-        r5.setText("1");
+        r1.setText(row_hints[0]);
+        r2.setText(row_hints[1]);
+        r3.setText(row_hints[2]);
+        r4.setText(row_hints[3]);
+        r5.setText(row_hints[4]);
 
         //connect col hint variables with i's in xml
         c1 = (TextView) findViewById(R.id.c1_hints);
@@ -52,11 +65,11 @@ public class EasyLevelActivity extends AppCompatActivity {
         c4 = (TextView) findViewById(R.id.c4_hints);
         c5 = (TextView) findViewById(R.id.c5_hints);
 
-        c1.setText("3");
-        c2.setText("1\n1");
-        c3.setText("1\n1");
-        c4.setText("1\n1");
-        c5.setText("3");
+        c1.setText(col_hints[0]);
+        c2.setText(col_hints[1]);
+        c3.setText(col_hints[2]);
+        c4.setText(col_hints[3]);
+        c5.setText(col_hints[4]);
 
         //connect image view variables
         grid[0] = (ImageView) findViewById(R.id.r1c1);
@@ -109,7 +122,7 @@ public class EasyLevelActivity extends AppCompatActivity {
         }
     }
 
-
+    //change square to black or white depending on what it currently is
     private void flip(int index){
         if(currentState[index] == 0){
             grid[index].setImageResource(R.drawable.black);
@@ -135,5 +148,28 @@ public class EasyLevelActivity extends AppCompatActivity {
             }
         }
         return solved;
+    }
+
+    //get the int arrays and string arrays from the resource files and set to global variables
+    private void setHintsAndSolution(int puzzle_num){
+        Resources res = getResources();
+        switch(puzzle_num){
+            case 1:
+                this.row_hints = res.getStringArray(R.array.easy_puzzle_1_row);
+                this.col_hints = res.getStringArray(R.array.easy_puzzle_1_col);
+                this.solution = res.getIntArray(R.array.easy_puzzle_1);
+            case 2:
+                this.row_hints = res.getStringArray(R.array.easy_puzzle_2_row);
+                this.col_hints = res.getStringArray(R.array.easy_puzzle_2_col);
+                this.solution = res.getIntArray(R.array.easy_puzzle_2);
+            case 3:
+                this.row_hints = res.getStringArray(R.array.easy_puzzle_3_row);
+                this.col_hints = res.getStringArray(R.array.easy_puzzle_3_col);
+                this.solution = res.getIntArray(R.array.easy_puzzle_3);
+            case 4:
+                this.row_hints = res.getStringArray(R.array.easy_puzzle_4_row);
+                this.col_hints = res.getStringArray(R.array.easy_puzzle_4_col);
+                this.solution = res.getIntArray(R.array.easy_puzzle_4);
+        }
     }
 }
