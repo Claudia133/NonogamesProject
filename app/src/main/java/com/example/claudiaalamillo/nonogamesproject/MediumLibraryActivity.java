@@ -10,10 +10,5 @@ public class MediumLibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medium_library);
 
-        PixelGridView pixelGrid = new PixelGridView(this);
-        pixelGrid.setNumColumns(10);
-        pixelGrid.setNumRows(10);
-
-        setContentView(pixelGrid);
     }
 }

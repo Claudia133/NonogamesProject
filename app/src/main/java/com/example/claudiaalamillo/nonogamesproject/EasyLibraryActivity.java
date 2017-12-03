@@ -26,39 +26,17 @@ public class EasyLibraryActivity extends AppCompatActivity {
         board1.setOnClickListener (new View.OnClickListener()
         {
             @Override
-            public void onClick (View view)
-            {
-//                PixelGridView pixelGrid = new PixelGridView(Context);
-//                pixelGrid.setNumColumns(5);
-//                pixelGrid.setNumRows(5);
-//
-//                setContentView(pixelGrid);
-                goToPuzzleBoard1();
+            public void onClick(View v) {
+                goToEasyLevelActivity();
             }
-        });
+        } );
 
 
-//        PixelGridView pixelGrid = new PixelGridView(this);
-//        pixelGrid.setNumColumns(6);
-//        pixelGrid.setNumRows(6);
-//
-//        setContentView(pixelGrid);
-
-//        InputStream is = new FileInputStream(xmlFile);
-
-
-//        int[] testEasy1 = getResources().getIntArray(R.array.easy1_solution);
-//        String[] array = getResources().get
     }
 
-    private void goToPuzzleBoard1()
+    private void goToEasyLevelActivity()
     {
-//        Intent intent = new Intent(this, PuzzleBoard1.class);
-//        startActivity(intent);
-        PixelGridView pixelGrid = new PixelGridView(this);
-        pixelGrid.setNumColumns(6);
-        pixelGrid.setNumRows(6);
-
-        setContentView(pixelGrid);
+        Intent intent = new Intent(this, EasyLevelActivity.class);
+        startActivity(intent);
     }
 }

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+
+    <TextView
+        android:id="@+id/c1_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="c\no\nl\n \n1" />
+
+    <TextView
+        android:id="@+id/c2_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="c\no\nl\n \n2" />
+
+    <TextView
+        android:id="@+id/c3_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="c\no\nl\n \n3" />
+
+    <TextView
+        android:id="@+id/c4_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="c\no\nl\n \n4" />
+
+    <TextView
+        android:id="@+id/c5_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="c\no\nl\n \n5" />
+</LinearLayout>

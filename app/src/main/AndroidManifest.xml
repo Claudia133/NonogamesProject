@@ -24,7 +24,8 @@
         <activity android:name=".SignUp" />
         <activity android:name=".BlankBoardForCreatePuzzle" />
         <activity android:name=".MediumLibraryActivity" />
-        <activity android:name=".HardLibraryActivity"></activity>
+        <activity android:name=".HardLibraryActivity" />
+        <activity android:name=".EasyLevelActivity"></activity>
     </application>
 
 </manifest>

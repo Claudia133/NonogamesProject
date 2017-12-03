@@ -10,10 +10,5 @@ public class HardLibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hard_library);
 
-        PixelGridView pixelGrid = new PixelGridView(this);
-        pixelGrid.setNumColumns(20);
-        pixelGrid.setNumRows(20);
-
-        setContentView(pixelGrid);
     }
 }

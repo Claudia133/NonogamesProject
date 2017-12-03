@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+
+    <TextView
+        android:id="@+id/r1_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="row 1" />
+
+    <TextView
+        android:id="@+id/r2_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="row 2" />
+
+    <TextView
+        android:id="@+id/r3_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="row 3" />
+
+    <TextView
+        android:id="@+id/r4_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="row 4" />
+
+    <TextView
+        android:id="@+id/r5_hints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="row 5" />
+
+
+
+</LinearLayout>
