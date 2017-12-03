@@ -258,6 +258,7 @@ public class MediumLevelActivity extends AppCompatActivity {
                 this.row_hints = res.getStringArray(R.array.medium_puzzle_1_row);
                 this.col_hints = res.getStringArray(R.array.medium_puzzle_1_col);
                 this.solution = res.getIntArray(R.array.medium_puzzle_1);
+                break;
 //            case 2:
 //                this.row_hints = res.getStringArray(R.array.easy_puzzle_2_row);
 //                this.col_hints = res.getStringArray(R.array.easy_puzzle_2_col);

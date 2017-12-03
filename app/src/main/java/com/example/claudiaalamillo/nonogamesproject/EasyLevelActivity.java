@@ -158,18 +158,22 @@ public class EasyLevelActivity extends AppCompatActivity {
                 this.row_hints = res.getStringArray(R.array.easy_puzzle_1_row);
                 this.col_hints = res.getStringArray(R.array.easy_puzzle_1_col);
                 this.solution = res.getIntArray(R.array.easy_puzzle_1);
+                break;
             case 2:
                 this.row_hints = res.getStringArray(R.array.easy_puzzle_2_row);
                 this.col_hints = res.getStringArray(R.array.easy_puzzle_2_col);
                 this.solution = res.getIntArray(R.array.easy_puzzle_2);
+                break;
             case 3:
                 this.row_hints = res.getStringArray(R.array.easy_puzzle_3_row);
                 this.col_hints = res.getStringArray(R.array.easy_puzzle_3_col);
                 this.solution = res.getIntArray(R.array.easy_puzzle_3);
+                break;
             case 4:
                 this.row_hints = res.getStringArray(R.array.easy_puzzle_4_row);
                 this.col_hints = res.getStringArray(R.array.easy_puzzle_4_col);
                 this.solution = res.getIntArray(R.array.easy_puzzle_4);
+                break;
         }
     }
 }
