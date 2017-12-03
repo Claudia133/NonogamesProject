@@ -6,7 +6,6 @@
     android:orientation="horizontal"
     android:weightSum="5">
 
-
     <TextView
         android:id="@+id/c1_hints"
         android:layout_width="match_parent"
@@ -56,4 +55,5 @@
         android:textColor="#000000"
         android:textSize="25sp"
         android:text="c\no\nl\n \n5" />
+
 </LinearLayout>
