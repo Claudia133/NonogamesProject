@@ -15,17 +15,17 @@
         <item>0</item> <item>1</item> <item>1</item> <item>1</item> <item>0</item>
     </integer-array>
     <integer-array name="easy_puzzle_3">
-        <item>0</item> <item>1</item> <item>1</item> <item>1</item> <item>0</item>
-        <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item>
-        <item>1</item> <item>0</item> <item>1</item> <item>0</item> <item>1</item>
-        <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item>
-        <item>1</item> <item>0</item> <item>1</item> <item>0</item> <item>1</item>
-    </integer-array>
-    <integer-array name="easy_puzzle_4">
         <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item>
         <item>1</item> <item>0</item> <item>1</item> <item>0</item> <item>1</item>
         <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item>
         <item>0</item> <item>1</item> <item>0</item> <item>1</item> <item>0</item>
         <item>1</item> <item>0</item> <item>0</item> <item>0</item> <item>1</item>
+    </integer-array>
+    <integer-array name="easy_puzzle_4">
+        <item>0</item> <item>1</item> <item>1</item> <item>1</item> <item>0</item>
+        <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item>
+        <item>1</item> <item>0</item> <item>1</item> <item>0</item> <item>1</item>
+        <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item>
+        <item>1</item> <item>0</item> <item>1</item> <item>0</item> <item>1</item>
     </integer-array>
 </resources>

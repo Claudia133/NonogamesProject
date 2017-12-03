@@ -13,7 +13,7 @@ public class MediumLibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medium_library);
 
-        ImageButton board1 = (ImageButton)findViewById(R.id.imageButton);
+        ImageButton board1 = (ImageButton)findViewById(R.id.imageButton1);
 
         board1.setOnClickListener (new View.OnClickListener() {
             @Override
