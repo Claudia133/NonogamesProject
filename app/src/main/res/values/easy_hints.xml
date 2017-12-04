@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="easy_puzzle_1_row">
+        <item>2 2</item>
+        <item>1 1 1</item>
+        <item>1 1</item>
+        <item>1 1</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="easy_puzzle_1_col">
+        <item>3</item>
+        <item>1\n1</item>
+        <item>1\n1</item>
+        <item>1\n1</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="easy_puzzle_2_row">
+        <item>5</item>
+        <item>1 1 1</item>
+        <item>5</item>
+        <item>1 1</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="easy_puzzle_2_col">
+        <item>3</item>
+        <item>1\n3</item>
+        <item>3\n1</item>
+        <item>1\n3</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="easy_puzzle_3_row">
+        <item>5</item>
+        <item>1 1 1</item>
+        <item>5</item>
+        <item>1 1</item>
+        <item>1 1</item>
+    </string-array>
+    <string-array name="easy_puzzle_3_col">
+        <item>3\n1</item>
+        <item>1\n2</item>
+        <item>3</item>
+        <item>1\n2</item>
+        <item>3\n1</item>
+    </string-array>
+    <string-array name="easy_puzzle_4_row">
+        <item>3</item>
+        <item>5</item>
+        <item>1 1 1</item>
+        <item>5</item>
+        <item>1 1 1</item>
+    </string-array>
+    <string-array name="easy_puzzle_4_col">
+        <item>4</item>
+        <item>2\n1</item>
+        <item>5</item>
+        <item>2\n1</item>
+        <item>4</item>
+    </string-array>
+</resources>

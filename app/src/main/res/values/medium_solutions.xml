@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="medium_puzzle_1">
+        <item>0</item> <item>0</item> <item>1</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>1</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>1</item> <item>0</item> <item>0</item> <item>1</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>1</item> <item>0</item> <item>1</item> <item>1</item> <item>0</item> <item>1</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>1</item> <item>1</item> <item>0</item> <item>1</item> <item>1</item> <item>0</item> <item>1</item> <item>1</item> <item>0</item>
+        <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item>
+        <item>1</item> <item>0</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>1</item> <item>0</item> <item>1</item>
+        <item>1</item> <item>0</item> <item>1</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>1</item> <item>0</item> <item>1</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>1</item> <item>0</item> <item>0</item> <item>1</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+    </integer-array>
+    <integer-array name="medium_puzzle_2">
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+    </integer-array>
+    <integer-array name="medium_puzzle_3">
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+    </integer-array>
+    <integer-array name="medium_puzzle_4">
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+        <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item> <item>0</item>
+    </integer-array>
+</resources>
