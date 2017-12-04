@@ -12,9 +12,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button goBackButton = (Button) findViewById(R.id.nextButton);
-        Button loginButton = (Button) findViewById(R.id.loginButton);
-        Button signupButton = findViewById(R.id.signupButton);
+        Button goBackButton = (Button) findViewById(R.id.button6);
+        Button loginButton = (Button) findViewById(R.id.button5);
 
         goBackButton.setOnClickListener (new View.OnClickListener() {
             @Override
@@ -29,27 +28,11 @@ public class Login extends AppCompatActivity {
                 goToMainMenu();
             }
         } );
-
-        signupButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                goToSignUp();
-            }
-        }
-        );
     }
 
     private void goToMainMenu()
     {
         Intent intent = new Intent(this, MainMenuActivity.class);
-        startActivity(intent);
-    }
-
-    private void goToSignUp()
-    {
-        Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
 }

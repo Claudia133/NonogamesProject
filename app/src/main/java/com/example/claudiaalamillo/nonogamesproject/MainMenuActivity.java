@@ -12,10 +12,10 @@ public class MainMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        Button playButton         = (Button) findViewById(R.id.playButton);
-        Button createPuzzleButton = (Button) findViewById(R.id.createButton);
-        Button changeThemeButton  = (Button) findViewById(R.id.themeButton);
-        Button loginButton        = (Button) findViewById(R.id.loginButton);
+        Button playButton         = (Button) findViewById(R.id.button1);
+        Button createPuzzleButton = (Button) findViewById(R.id.button2);
+        Button changeThemeButton  = (Button) findViewById(R.id.button3);
+        Button loginButton        = (Button) findViewById(R.id.button4);
 
         playButton.setOnClickListener  (new View.OnClickListener() {
             @Override

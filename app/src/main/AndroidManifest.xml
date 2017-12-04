@@ -22,12 +22,10 @@
         <activity android:name=".EasyLibraryActivity" />
         <activity android:name=".PuzzleBoard" />
         <activity android:name=".SignUp" />
-        <activity android:name=".BlankBoardForCreatePuzzle" />
         <activity android:name=".MediumLibraryActivity" />
         <activity android:name=".HardLibraryActivity" />
         <activity android:name=".EasyLevelActivity" />
-        <activity android:name=".MediumLevelActivity" />
-        <activity android:name=".SolvedPopupWindow"></activity>
+        <activity android:name=".MediumLevelActivity"></activity>
     </application>
 
 </manifest>
