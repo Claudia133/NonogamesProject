@@ -15,8 +15,8 @@
     <include
         android:id="@+id/mediumgrid"
         layout="@layout/medium_grid"
-        android:layout_width="221dp"
-        android:layout_height="222dp"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
         tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="272dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,8 +25,8 @@
     <include
         android:id="@+id/include"
         layout="@layout/medium_row_hints"
-        android:layout_width="100dp"
-        android:layout_height="222dp"
+        android:layout_width="80dp"
+        android:layout_height="260dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="272dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,7 +36,7 @@
     <include
         android:id="@+id/include"
         layout="@layout/medium_col_hints"
-        android:layout_width="221dp"
+        android:layout_width="260dp"
         android:layout_height="191dp"
         tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="83dp"

@@ -25,45 +25,75 @@
         <item>3</item>
     </string-array>
     <string-array name="medium_puzzle_2_row">
-        <item>5</item>
-        <item>1 1 1</item>
-        <item>5</item>
-        <item>1 1</item>
+        <item>0</item>
+        <item>4 4</item>
+        <item>5 1</item>
+        <item>5 1</item>
+        <item>5 1</item>
+        <item>4 1</item>
+        <item>3 1</item>
         <item>3</item>
+        <item>1</item>
+        <item>0</item>
     </string-array>
     <string-array name="medium_puzzle_2_col">
         <item>3</item>
-        <item>1\n3</item>
-        <item>3\n1</item>
-        <item>1\n3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>1\n1</item>
+        <item>1\n1</item>
+        <item>1\n1</item>
         <item>3</item>
+        <item>0</item>
     </string-array>
     <string-array name="medium_puzzle_3_row">
+        <item>0</item>
+        <item>3</item>
         <item>5</item>
+        <item>7</item>
+        <item>1 3 1</item>
+        <item>9</item>
         <item>1 1 1</item>
-        <item>5</item>
-        <item>1 1</item>
-        <item>1 1</item>
+        <item>1 1 1</item>
+        <item>0</item>
+        <item>0</item>
     </string-array>
     <string-array name="medium_puzzle_3_col">
-        <item>3\n1</item>
-        <item>1\n2</item>
-        <item>3</item>
-        <item>1\n2</item>
-        <item>3\n1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1\n1</item>
+        <item>2\n3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>5</item>
+        <item>2\n3</item>
+        <item>1\n1</item>
+        <item>2</item>
     </string-array>
     <string-array name="medium_puzzle_4_row">
-        <item>3</item>
+        <item>1 1</item>
+        <item>1 1</item>
         <item>5</item>
-        <item>1 1 1</item>
-        <item>5</item>
-        <item>1 1 1</item>
+        <item>2 1 2</item>
+        <item>9</item>
+        <item>1 5 1</item>
+        <item>1 5 1</item>
+        <item>1 1</item>
+        <item>2 2</item>
+        <item>0</item>
     </string-array>
     <string-array name="medium_puzzle_4_col">
-        <item>4</item>
-        <item>2\n1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1\n5\n1</item>
+        <item>2\n5</item>
         <item>5</item>
-        <item>2\n1</item>
-        <item>4</item>
+        <item>2\n5</item>
+        <item>1\n5\n1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>0</item>
     </string-array>
 </resources>
