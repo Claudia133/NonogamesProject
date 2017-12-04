@@ -110,8 +110,8 @@ public class PixelGridView extends View {
         //draws black selection
 
 
-        InputStream ls = this.getResources().openRawResource(R.raw.p1);
-        String[] g = getGridData(ls);
+//        InputStream ls = this.getResources().openRawResource(R.raw.p1);
+//        String[] g = getGridData(ls);
 
         for (int i = 0; i < numColumns; i++) {
 
@@ -137,19 +137,19 @@ public class PixelGridView extends View {
                 bluePaint.setTextSize((80));
 
 //                String x = g[j].charAt(i) + "";
-                String x = Character.toString(g[j].charAt(i));
-                String t = g[j];
+//                String x = Character.toString(g[j].charAt(i));
+//                String t = g[j];
 
 
-                if (x.equals("-")) {
-
-                    canvas.drawText("", r.centerX() - 20, r.centerY() + 25, bluePaint);
-                } else {
-
-                    canvas.drawText(x, r.centerX() - 20, r.centerY() + 25, bluePaint);
-//                    selectableGrid[i][j] = false;
-                    cellChecked[i][j] = false;
-                }
+//                if (x.equals("-")) {
+//
+//                    canvas.drawText("", r.centerX() - 20, r.centerY() + 25, bluePaint);
+//                } else {
+//
+//                    canvas.drawText(x, r.centerX() - 20, r.centerY() + 25, bluePaint);
+////                    selectableGrid[i][j] = false;
+//                    cellChecked[i][j] = false;
+//                }
             }
         }
 
