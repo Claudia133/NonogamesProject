@@ -14,11 +14,32 @@ public class MediumLibraryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_medium_library);
 
         ImageButton board1 = (ImageButton)findViewById(R.id.imageButton1);
+        ImageButton board2 = (ImageButton)findViewById(R.id.imageButton2);
+        ImageButton board3 = (ImageButton)findViewById(R.id.imageButton3);
+        ImageButton board4 = (ImageButton)findViewById(R.id.imageButton4);
 
         board1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToMediumLevelActivity(1);
+            }
+        } );
+        board2.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToMediumLevelActivity(2);
+            }
+        } );
+        board3.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToMediumLevelActivity(3);
+            }
+        } );
+        board4.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToMediumLevelActivity(4);
             }
         } );
 
