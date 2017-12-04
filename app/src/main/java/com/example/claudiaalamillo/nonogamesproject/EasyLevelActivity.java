@@ -3,6 +3,7 @@ package com.example.claudiaalamillo.nonogamesproject;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -41,7 +42,7 @@ public class EasyLevelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_level);
 
-        Button goBack = findViewById(R.id.easyButton);
+        Button goBack = findViewById(R.id.backButton);
 
         goBack.setOnClickListener (new View.OnClickListener()
         {
@@ -201,14 +202,35 @@ public class EasyLevelActivity extends AppCompatActivity {
 
     private void showPopupWindow()
     {
-        LinearLayout easyLayout = (LinearLayout) findViewById(R.id.activity_easy_level);
+        ConstraintLayout easyLayout = (ConstraintLayout) findViewById(R.id.activity_easy_level);
 
         LayoutInflater li = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = li.inflate(R.layout.activity_solved_popup_window, null);
 
+        SolvedPopupWindow spw = new SolvedPopupWindow();
+
+        Button levelSelection = findViewById(R.id.levelSelectionSPW);
+        Button mainMenu = findViewById(R.id.mainMenuButtonSPW);
+
+        levelSelection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                SolvedPopupWindow.class.getClass().
+
+            }
+        });
+        mainMenu.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+
+            }
+        });
+
         // creating actual popup window
-        int width = LinearLayout.LayoutParams.WRAP_CONTENT;
-        int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+        int width = 1000;
+        int height = 500;
         boolean dismiss = true;
         final PopupWindow popupWindow = new PopupWindow(popupView, width, height, dismiss);
 

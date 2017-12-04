@@ -13,7 +13,7 @@ public class LevelSelection extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_selection);
-        Button goBackButton = (Button) findViewById(R.id.button13);
+        Button goBackButton = (Button) findViewById(R.id.backButton);
         Button easyButton = (Button) findViewById(R.id.easyButton);
         Button mediumButton = (Button) findViewById(R.id.mediumButton);
         Button hardButton = (Button) findViewById(R.id.hardButton);
@@ -27,13 +27,14 @@ public class LevelSelection extends AppCompatActivity {
                 goToMainMenuActivity();
             }
         } );
-        easyButton.setOnClickListener (new View.OnClickListener()
+        easyButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v) {
-                goToEasyLibraryActivity();
+            public void onClick(View v)
+            {
+                goToEasyLibrary();
             }
-        } );
+        });
         mediumButton.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +47,20 @@ public class LevelSelection extends AppCompatActivity {
                 goToHardActivity();
             }
         } );
+        timedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToTimedActivity();
+            }
+        });
+        customButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                goToCustomActivity();
+            }
+        });
     }
 
     private void goToMainMenuActivity()
@@ -54,7 +69,7 @@ public class LevelSelection extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void goToEasyLibraryActivity()
+    private void goToEasyLibrary()
     {
         Intent intent = new Intent(this, EasyLibraryActivity.class);
         startActivity(intent);

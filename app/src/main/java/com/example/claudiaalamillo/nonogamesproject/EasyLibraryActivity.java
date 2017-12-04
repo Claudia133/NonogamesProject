@@ -10,8 +10,6 @@ import android.widget.ImageButton;
 
 public class EasyLibraryActivity extends AppCompatActivity {
 
-//    private PopupWindow pw;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +21,7 @@ public class EasyLibraryActivity extends AppCompatActivity {
         ImageButton board3 = (ImageButton)findViewById(R.id.imageButton3);
         ImageButton board4 = (ImageButton)findViewById(R.id.imageButton4);
 
-        Button goBack = findViewById(R.id.easyButton);
-
-
+        Button goBack = findViewById(R.id.backButton);
 
         board1.setOnClickListener (new View.OnClickListener()
         {

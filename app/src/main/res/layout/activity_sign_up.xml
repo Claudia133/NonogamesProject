@@ -4,59 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.claudiaalamillo.nonogamesproject.SignUp">
+    tools:context="com.example.claudiaalamillo.nonogamesproject.SignUp"
+    tools:layout_editor_absoluteY="25dp">
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="79dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="GO BACK"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/usernameText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/passwordText"
         android:layout_width="220dp"
         android:layout_height="0dp"
-        android:layout_marginTop="198dp"
+        android:layout_marginBottom="323dp"
         android:ems="10"
         android:hint="Think of a cool password"
         android:inputType="textEmailAddress"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameText"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/usernameText"
         android:layout_width="220dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="105dp"
         android:layout_marginTop="143dp"
         android:ems="10"
         android:hint="Unique usernames only"
         android:inputType="textEmailAddress"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/doneButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/doneButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="225dp"
+        android:layout_marginStart="53dp"
         android:text="done"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="294dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/usernameText" />
 </android.support.constraint.ConstraintLayout>

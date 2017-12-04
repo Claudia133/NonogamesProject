@@ -1,7 +1,10 @@
 package com.example.claudiaalamillo.nonogamesproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class SolvedPopupWindow extends AppCompatActivity {
 
@@ -9,5 +12,37 @@ public class SolvedPopupWindow extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solved_popup_window);
+
+        Button levelSelectionButton = findViewById(R.id.levelSelectionSPW);
+        Button mainMenuButton = findViewById(R.id.mainMenuButtonSPW);
+
+        levelSelectionButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                goToLevelSelection();
+            }
+        });
+        mainMenuButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                goToMainMenu();
+            }
+        });
+    }
+
+    private void goToLevelSelection()
+    {
+        Intent intent = new Intent(this, LevelSelection.class);
+        startActivity(intent);
+    }
+
+    private void goToMainMenu()
+    {
+        Intent intent = new Intent(this, MainMenuActivity.class);
+        startActivity(intent);
     }
 }
