@@ -205,7 +205,7 @@ public class EasyLevelActivity extends AppCompatActivity {
         ConstraintLayout easyLayout = (ConstraintLayout) findViewById(R.id.activity_easy_level);
 
         LayoutInflater li = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-        View popupView = li.inflate(R.layout.activity_solved_popup_window, null);
+        View popupView = li.inflate(R.layout.activity_solved_popup_window_new, null);
 
         SolvedPopupWindow spw = new SolvedPopupWindow();
 

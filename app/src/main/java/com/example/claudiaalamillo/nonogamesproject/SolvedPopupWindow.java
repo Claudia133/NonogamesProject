@@ -11,10 +11,10 @@ public class SolvedPopupWindow extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_solved_popup_window);
+        setContentView(R.layout.activity_solved_popup_window_new);
 
-        Button levelSelectionButton = findViewById(R.id.levelSelectionSPW);
-        Button mainMenuButton = findViewById(R.id.mainMenuButtonSPW);
+        Button levelSelectionButton = (Button) findViewById(R.id.levelSelectionSPW);
+        Button mainMenuButton = (Button) findViewById(R.id.mainMenuButtonSPW);
 
         // comment
         levelSelectionButton.setOnClickListener(new View.OnClickListener()
