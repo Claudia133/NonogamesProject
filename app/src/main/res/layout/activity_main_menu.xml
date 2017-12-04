@@ -7,7 +7,7 @@
     tools:context="com.example.claudiaalamillo.nonogamesproject.MainMenuActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/themeButton"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:text="Change Theme"
@@ -20,7 +20,7 @@
         android:layout_marginBottom="173dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/createButton"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:text="Create Puzzle"
@@ -28,11 +28,11 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/themeButton"
         tools:layout_constraintLeft_creator="1" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nonogamesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="128dp"
@@ -46,35 +46,34 @@
         android:textAllCaps="false"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="@+id/createButton"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintVertical_bias="1.0" />
+        tools:layout_constraintTop_creator="1" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/playButton"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:text="Play"
+        app:layout_constraintBottom_toTopOf="@+id/createButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        tools:layout_constraintLeft_creator="1" />
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:text="Login"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="16dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

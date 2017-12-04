@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteX="0dp">
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/createText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -27,7 +27,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/dimensionsText"
         android:layout_width="128dp"
         android:layout_height="28dp"
         android:layout_marginBottom="63dp"
@@ -35,56 +35,56 @@
         android:enabled="false"
         android:text="Dimensions"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/checkBox"
-        app:layout_constraintLeft_toLeftOf="@+id/editText3"
-        app:layout_constraintRight_toRightOf="@+id/editText3"
-        app:layout_constraintTop_toTopOf="@+id/editText3"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox5x5"
+        app:layout_constraintLeft_toLeftOf="@+id/createText"
+        app:layout_constraintRight_toRightOf="@+id/createText"
+        app:layout_constraintTop_toTopOf="@+id/createText"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="5x5"
-        android:textSize="18sp"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="28dp"
-        app:layout_constraintLeft_toLeftOf="@+id/checkBox2" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkBox10x10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10x10"
         android:textSize="18sp"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox15x15"
         android:layout_marginStart="11dp"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="30dp"
-        app:layout_constraintLeft_toLeftOf="@+id/textView" />
+        app:layout_constraintLeft_toLeftOf="@+id/dimensionsText" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkBox5x5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="5x5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox10x10"
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox10x10"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <CheckBox
+        android:id="@+id/checkBox15x15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="20x20"
         android:textSize="18sp"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintRight_toRightOf="@+id/checkBox2"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintRight_toRightOf="@+id/checkBox10x10"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="37dp"
-        app:layout_constraintLeft_toLeftOf="@+id/checkBox2" />
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox10x10" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/nextButton"
         android:layout_width="132dp"
         android:layout_height="48dp"
         android:text="next"
@@ -97,11 +97,10 @@
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="Go Back"
         app:layout_constraintLeft_toLeftOf="parent"

@@ -12,8 +12,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button goBackButton = (Button) findViewById(R.id.button6);
-        Button loginButton = (Button) findViewById(R.id.button5);
+        Button goBackButton = (Button) findViewById(R.id.nextButton);
+        Button loginButton = (Button) findViewById(R.id.loginButton);
 
         goBackButton.setOnClickListener (new View.OnClickListener() {
             @Override

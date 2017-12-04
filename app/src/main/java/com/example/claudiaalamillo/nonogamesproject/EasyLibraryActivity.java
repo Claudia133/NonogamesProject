@@ -6,20 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.content.*;
-import android.widget.PopupWindow;
-
-import org.xml.sax.XMLReader;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.logging.Level;
 
 
 public class EasyLibraryActivity extends AppCompatActivity {
 
-    private PopupWindow pw;
+//    private PopupWindow pw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +23,7 @@ public class EasyLibraryActivity extends AppCompatActivity {
         ImageButton board3 = (ImageButton)findViewById(R.id.imageButton3);
         ImageButton board4 = (ImageButton)findViewById(R.id.imageButton4);
 
-        Button goBack = findViewById(R.id.button);
+        Button goBack = findViewById(R.id.easyButton);
 
 
 
@@ -90,10 +81,5 @@ public class EasyLibraryActivity extends AppCompatActivity {
     {
         Intent intent = new Intent(this, LevelSelection.class);
         startActivity(intent);
-    }
-
-    private void bindActivity()
-    {
-
     }
 }

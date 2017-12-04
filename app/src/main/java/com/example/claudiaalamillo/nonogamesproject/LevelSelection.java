@@ -14,11 +14,11 @@ public class LevelSelection extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_selection);
         Button goBackButton = (Button) findViewById(R.id.button13);
-        Button easyButton = (Button) findViewById(R.id.button);
-        Button mediumButton = (Button) findViewById(R.id.button9);
-        Button hardButton = (Button) findViewById(R.id.button10);
-        Button timedButton = (Button) findViewById(R.id.button11);
-        Button customButton = (Button) findViewById(R.id.button12);
+        Button easyButton = (Button) findViewById(R.id.easyButton);
+        Button mediumButton = (Button) findViewById(R.id.mediumButton);
+        Button hardButton = (Button) findViewById(R.id.hardButton);
+        Button timedButton = (Button) findViewById(R.id.timedButton);
+        Button customButton = (Button) findViewById(R.id.customButton);
 
         goBackButton.setOnClickListener (new View.OnClickListener()
         {

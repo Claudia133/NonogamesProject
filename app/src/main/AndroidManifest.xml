@@ -26,7 +26,8 @@
         <activity android:name=".MediumLibraryActivity" />
         <activity android:name=".HardLibraryActivity" />
         <activity android:name=".EasyLevelActivity" />
-        <activity android:name=".MediumLevelActivity"></activity>
+        <activity android:name=".MediumLevelActivity" />
+        <activity android:name=".SolvedPopupWindow"></activity>
     </application>
 
 </manifest>

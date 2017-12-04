@@ -1,16 +1,19 @@
 package com.example.claudiaalamillo.nonogamesproject;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class EasyLevelActivity extends AppCompatActivity {
 
@@ -18,6 +21,7 @@ public class EasyLevelActivity extends AppCompatActivity {
     private static final int COLUMNS = 5, ROWS = 5;
     private static final int DIMENSIONS = ROWS * COLUMNS;
     private int[] solution = new int[DIMENSIONS];
+    private PopupWindow pw;
 
     //current state of the board, initialize to 0
     private int[] currentState = new int[DIMENSIONS];
@@ -37,7 +41,7 @@ public class EasyLevelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_level);
 
-        Button goBack = findViewById(R.id.button);
+        Button goBack = findViewById(R.id.easyButton);
 
         goBack.setOnClickListener (new View.OnClickListener()
         {
@@ -122,12 +126,13 @@ public class EasyLevelActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     flip(finalI);
                     if( isSolved()){
-                        Context context = getApplicationContext();
-                        CharSequence text = "SOLVED!";
-                        int duration = Toast.LENGTH_SHORT;
-
-                        Toast toast = Toast.makeText(context, text, duration);
-                        toast.show();
+//                        Context context = getApplicationContext();
+//                        CharSequence text = "SOLVED!";
+//                        int duration = Toast.LENGTH_SHORT;
+//
+//                        Toast toast = Toast.makeText(context, text, duration);
+//                        toast.show();
+                        showPopupWindow();
                     }
                 }
             });
@@ -192,5 +197,34 @@ public class EasyLevelActivity extends AppCompatActivity {
                 this.solution = res.getIntArray(R.array.easy_puzzle_4);
                 break;
         }
+    }
+
+    private void showPopupWindow()
+    {
+        LinearLayout easyLayout = (LinearLayout) findViewById(R.id.activity_easy_level);
+
+        LayoutInflater li = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+        View popupView = li.inflate(R.layout.activity_solved_popup_window, null);
+
+        // creating actual popup window
+        int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+        int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+        boolean dismiss = true;
+        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, dismiss);
+
+        // display popup
+        popupWindow.showAtLocation(easyLayout, Gravity.CENTER, 0, 0);
+
+        // allow user to dismiss the window when touched
+        popupView.setOnTouchListener(new View.OnTouchListener()
+        {
+            @Override
+            public boolean onTouch(View v, MotionEvent me)
+            {
+                popupWindow.dismiss();
+                return true;
+            }
+        });
+
     }
 }
