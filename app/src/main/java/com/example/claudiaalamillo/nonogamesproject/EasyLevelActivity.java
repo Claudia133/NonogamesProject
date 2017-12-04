@@ -212,11 +212,25 @@ public class EasyLevelActivity extends AppCompatActivity {
         Button levelSelection = findViewById(R.id.levelSelectionSPW);
         Button mainMenu = findViewById(R.id.mainMenuButtonSPW);
 
+//        levelSelection.setOnClickListener(this);
+
+        // creating actual popup window
+        int width = 1000;
+        int height = 500;
+        boolean dismiss = true;
+        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, dismiss);
+
+        // display popup
+        popupWindow.showAtLocation(easyLayout, Gravity.CENTER, 0, 0);
+
         levelSelection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                SolvedPopupWindow.class.getClass().
-
+//                SolvedPopupWindow.class.
+//                Intent intent = new Intent();
+//                intent.setClass(this, LevelSelection.class);
+//                startActivity(intent);
+                startActivity(new Intent(EasyLevelActivity.this, LevelSelection.class));
             }
         });
         mainMenu.setOnClickListener(new View.OnClickListener()
@@ -227,15 +241,6 @@ public class EasyLevelActivity extends AppCompatActivity {
 
             }
         });
-
-        // creating actual popup window
-        int width = 1000;
-        int height = 500;
-        boolean dismiss = true;
-        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, dismiss);
-
-        // display popup
-        popupWindow.showAtLocation(easyLayout, Gravity.CENTER, 0, 0);
 
         // allow user to dismiss the window when touched
         popupView.setOnTouchListener(new View.OnTouchListener()
