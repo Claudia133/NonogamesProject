@@ -7,14 +7,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.content.*;
+import android.widget.PopupWindow;
 
 import org.xml.sax.XMLReader;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.util.logging.Level;
+
 
 public class EasyLibraryActivity extends AppCompatActivity {
+
+    private PopupWindow pw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,10 @@ public class EasyLibraryActivity extends AppCompatActivity {
         ImageButton board2 = (ImageButton)findViewById(R.id.imageButton2);
         ImageButton board3 = (ImageButton)findViewById(R.id.imageButton3);
         ImageButton board4 = (ImageButton)findViewById(R.id.imageButton4);
+
+        Button goBack = findViewById(R.id.button);
+
+
 
         board1.setOnClickListener (new View.OnClickListener()
         {
@@ -56,7 +65,13 @@ public class EasyLibraryActivity extends AppCompatActivity {
             }
         } );
 
-
+        goBack.setOnClickListener (new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                goToLevelSelection();
+            }
+        } );
     }
 
     private void goToEasyLevelActivity(int puzzle_num)
@@ -69,5 +84,16 @@ public class EasyLibraryActivity extends AppCompatActivity {
         intent.putExtras(b);
 
         startActivity(intent);
+    }
+
+    private void goToLevelSelection()
+    {
+        Intent intent = new Intent(this, LevelSelection.class);
+        startActivity(intent);
+    }
+
+    private void bindActivity()
+    {
+
     }
 }

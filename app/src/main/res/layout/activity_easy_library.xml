@@ -3,14 +3,20 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
     android:weightSum="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back " />
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -20,59 +26,62 @@
             android:id="@+id/imageButton1"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/question_mark"
-            android:scaleType="fitCenter"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/question_mark"
             app:layout_constraintLeft_toLeftOf="@id/guideline"
-            app:layout_constraintTop_toTopOf="@id/guideline3"/>
+            app:layout_constraintTop_toTopOf="@id/guideline3" />
 
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/question_mark"
-            android:scaleType="fitCenter"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/question_mark"
             app:layout_constraintLeft_toLeftOf="@id/guideline2"
-            app:layout_constraintTop_toTopOf="@id/guideline3"/>
+            app:layout_constraintTop_toTopOf="@id/guideline3" />
 
 
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/question_mark"
-            android:scaleType="fitCenter"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/question_mark"
             app:layout_constraintLeft_toLeftOf="@id/guideline"
-            app:layout_constraintTop_toTopOf="@id/guideline4"/>
+            app:layout_constraintTop_toTopOf="@id/guideline4" />
 
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/question_mark"
-            android:scaleType="fitCenter"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/question_mark"
             app:layout_constraintLeft_toLeftOf="@id/guideline2"
-            app:layout_constraintTop_toTopOf="@id/guideline4"/>
+            app:layout_constraintTop_toTopOf="@id/guideline4" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.05" />
+            app:layout_constraintGuide_end="334dp"
+            app:layout_constraintStart_toEndOf="@+id/guideline6" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="157dp"
             android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintGuide_percent=".55" />
 
         <android.support.constraint.Guideline
@@ -88,6 +97,24 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent=".60" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
 

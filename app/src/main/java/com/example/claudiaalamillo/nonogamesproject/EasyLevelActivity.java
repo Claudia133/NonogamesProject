@@ -1,11 +1,13 @@
 package com.example.claudiaalamillo.nonogamesproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +36,16 @@ public class EasyLevelActivity extends AppCompatActivity {
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_level);
+
+        Button goBack = findViewById(R.id.button);
+
+        goBack.setOnClickListener (new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                goToEasyLibrary();
+            }
+        } );
 
         //get puzzle id
         Bundle b = getIntent().getExtras();
@@ -134,6 +146,11 @@ public class EasyLevelActivity extends AppCompatActivity {
         }
     }
 
+    private void goToEasyLibrary()
+    {
+        Intent intent = new Intent(this, EasyLibraryActivity.class);
+        startActivity(intent);
+    }
 
     //check if the board is solved by comparing the pixelList array with solution array
     private boolean isSolved(){

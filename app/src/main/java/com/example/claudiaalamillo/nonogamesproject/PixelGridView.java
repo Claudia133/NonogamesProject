@@ -241,24 +241,24 @@ public class PixelGridView extends View {
 
     }
 
-    public boolean isSolution(MotionEvent event)
-    {
-        // check if each square is checked and compare to the hints using cellChecked boolean 2D array
-
-        Easy1Solution easysol = new Easy1Solution();
-
-        int [][] easySol = easysol.solution;
-        for (int row = 0; row < numRows; row++)
-        {
-            for (int col = 0; col < numColumns; col++)
-            {
-                if ((easySol[row][col] != 1) && (cellChecked[row][col] == false))
-                {
-                    return false;
-                }
-            }
-        }
-
-        return true;
-    }
+//    public boolean isSolution(MotionEvent event)
+//    {
+//        // check if each square is checked and compare to the hints using cellChecked boolean 2D array
+//
+//        Easy1Solution easysol = new Easy1Solution();
+//
+//        int [][] easySol = easysol.solution;
+//        for (int row = 0; row < numRows; row++)
+//        {
+//            for (int col = 0; col < numColumns; col++)
+//            {
+//                if ((easySol[row][col] != 1) && (cellChecked[row][col] == false))
+//                {
+//                    return false;
+//                }
+//            }
+//        }
+//
+//        return true;
+//    }
 }
