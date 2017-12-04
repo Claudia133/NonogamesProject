@@ -13,12 +13,12 @@ public class LevelSelection extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_selection);
-        Button goBackButton = (Button) findViewById(R.id.backButton);
-        Button easyButton = (Button) findViewById(R.id.easyButton);
-        Button mediumButton = (Button) findViewById(R.id.mediumButton);
-        Button hardButton = (Button) findViewById(R.id.hardButton);
-        Button timedButton = (Button) findViewById(R.id.timedButton);
-        Button customButton = (Button) findViewById(R.id.customButton);
+        Button goBackButton = (Button) findViewById(R.id.button13);
+        Button easyButton = (Button) findViewById(R.id.button);
+        Button mediumButton = (Button) findViewById(R.id.button9);
+        Button hardButton = (Button) findViewById(R.id.button10);
+        Button timedButton = (Button) findViewById(R.id.button11);
+        Button customButton = (Button) findViewById(R.id.button12);
 
         goBackButton.setOnClickListener (new View.OnClickListener()
         {
@@ -27,14 +27,13 @@ public class LevelSelection extends AppCompatActivity {
                 goToMainMenuActivity();
             }
         } );
-        easyButton.setOnClickListener(new View.OnClickListener()
+        easyButton.setOnClickListener (new View.OnClickListener()
         {
             @Override
-            public void onClick(View v)
-            {
-                goToEasyLibrary();
+            public void onClick(View v) {
+                goToEasyLibraryActivity();
             }
-        });
+        } );
         mediumButton.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,20 +46,6 @@ public class LevelSelection extends AppCompatActivity {
                 goToHardActivity();
             }
         } );
-        timedButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                goToTimedActivity();
-            }
-        });
-        customButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                goToCustomActivity();
-            }
-        });
     }
 
     private void goToMainMenuActivity()
@@ -69,7 +54,7 @@ public class LevelSelection extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void goToEasyLibrary()
+    private void goToEasyLibraryActivity()
     {
         Intent intent = new Intent(this, EasyLibraryActivity.class);
         startActivity(intent);

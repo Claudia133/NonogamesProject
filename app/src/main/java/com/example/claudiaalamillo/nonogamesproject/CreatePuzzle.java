@@ -14,35 +14,20 @@ public class CreatePuzzle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_puzzle);
 
-        Button backButton = (Button) findViewById(R.id.backButton);
-        Button nextButton = (Button) findViewById(R.id.nextButton);
+        Button backButton = (Button) findViewById(R.id.button7);
+        Button nextButton = (Button) findViewById(R.id.button6);
 
         backButton.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToMainMenuActivity();
             }
-        } );
-        nextButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                goToPuzzleBoard1();
-            }
-        });
-    }
-
+} );
+        }
 
     private void goToMainMenuActivity()
     {
         Intent intent = new Intent(this, MainMenuActivity.class);
-        startActivity(intent);
-    }
-
-    private void goToPuzzleBoard1()
-    {
-        Intent intent = new Intent(this, PuzzleBoard1.class);
         startActivity(intent);
     }
 }
