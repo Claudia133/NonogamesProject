@@ -6,7 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.content.*;
 
+import org.xml.sax.XMLReader;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 public class EasyLibraryActivity extends AppCompatActivity {
 
@@ -16,12 +22,10 @@ public class EasyLibraryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_easy_library);
 
         //buttons for thumbnails of puzzles
-        ImageButton board1 = (ImageButton)findViewById(R.id.imageButton1);
-        ImageButton board2 = (ImageButton)findViewById(R.id.imageButton2);
-        ImageButton board3 = (ImageButton)findViewById(R.id.imageButton3);
-        ImageButton board4 = (ImageButton)findViewById(R.id.imageButton4);
-
-        Button goBack = findViewById(R.id.backButton);
+        ImageButton board1 = findViewById(R.id.imageButton1);
+        ImageButton board2 = findViewById(R.id.imageButton2);
+        ImageButton board3 = findViewById(R.id.imageButton3);
+        ImageButton board4 = findViewById(R.id.imageButton4);
 
         board1.setOnClickListener (new View.OnClickListener()
         {
@@ -52,13 +56,7 @@ public class EasyLibraryActivity extends AppCompatActivity {
             }
         } );
 
-        goBack.setOnClickListener (new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v) {
-                goToLevelSelection();
-            }
-        } );
+
     }
 
     private void goToEasyLevelActivity(int puzzle_num)
@@ -70,12 +68,6 @@ public class EasyLibraryActivity extends AppCompatActivity {
         b.putInt("id", puzzle_num);
         intent.putExtras(b);
 
-        startActivity(intent);
-    }
-
-    private void goToLevelSelection()
-    {
-        Intent intent = new Intent(this, LevelSelection.class);
         startActivity(intent);
     }
 }
