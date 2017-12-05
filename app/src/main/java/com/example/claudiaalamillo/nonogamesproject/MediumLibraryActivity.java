@@ -13,10 +13,10 @@ public class MediumLibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medium_library);
 
-        ImageButton board1 = (ImageButton)findViewById(R.id.imageButton1);
-        ImageButton board2 = (ImageButton)findViewById(R.id.imageButton2);
-        ImageButton board3 = (ImageButton)findViewById(R.id.imageButton3);
-        ImageButton board4 = (ImageButton)findViewById(R.id.imageButton4);
+        ImageButton board1 = findViewById(R.id.imageButton1);
+        ImageButton board2 = findViewById(R.id.imageButton2);
+        ImageButton board3 = findViewById(R.id.imageButton3);
+        ImageButton board4 = findViewById(R.id.imageButton4);
 
         board1.setOnClickListener (new View.OnClickListener() {
             @Override

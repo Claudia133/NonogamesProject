@@ -65,11 +65,11 @@ public class EasyLevelActivity extends AppCompatActivity {
         setHintsAndSolution(puzzle_num);
 
         //connect row hint variables with id's in xml
-        r1 = (TextView) findViewById(R.id.r1_hints);
-        r2 = (TextView) findViewById(R.id.r2_hints);
-        r3 = (TextView) findViewById(R.id.r3_hints);
-        r4 = (TextView) findViewById(R.id.r4_hints);
-        r5 = (TextView) findViewById(R.id.r5_hints);
+        r1 = findViewById(R.id.r1_hints);
+        r2 = findViewById(R.id.r2_hints);
+        r3 = findViewById(R.id.r3_hints);
+        r4 = findViewById(R.id.r4_hints);
+        r5 = findViewById(R.id.r5_hints);
 
         r1.setText(row_hints[0]);
         r2.setText(row_hints[1]);
@@ -78,11 +78,11 @@ public class EasyLevelActivity extends AppCompatActivity {
         r5.setText(row_hints[4]);
 
         //connect col hint variables with i's in xml
-        c1 = (TextView) findViewById(R.id.c1_hints);
-        c2 = (TextView) findViewById(R.id.c2_hints);
-        c3 = (TextView) findViewById(R.id.c3_hints);
-        c4 = (TextView) findViewById(R.id.c4_hints);
-        c5 = (TextView) findViewById(R.id.c5_hints);
+        c1 = findViewById(R.id.c1_hints);
+        c2 = findViewById(R.id.c2_hints);
+        c3 = findViewById(R.id.c3_hints);
+        c4 = findViewById(R.id.c4_hints);
+        c5 = findViewById(R.id.c5_hints);
 
         c1.setText(col_hints[0]);
         c2.setText(col_hints[1]);
@@ -91,35 +91,35 @@ public class EasyLevelActivity extends AppCompatActivity {
         c5.setText(col_hints[4]);
 
         //connect image view variables
-        grid[0] = (ImageView) findViewById(R.id.r1c1);
-        grid[1] = (ImageView) findViewById(R.id.r1c2);
-        grid[2] = (ImageView) findViewById(R.id.r1c3);
-        grid[3] = (ImageView) findViewById(R.id.r1c4);
-        grid[4] = (ImageView) findViewById(R.id.r1c5);
+        grid[0] = findViewById(R.id.r1c1);
+        grid[1] = findViewById(R.id.r1c2);
+        grid[2] = findViewById(R.id.r1c3);
+        grid[3] = findViewById(R.id.r1c4);
+        grid[4] = findViewById(R.id.r1c5);
 
-        grid[5] = (ImageView) findViewById(R.id.r2c1);
-        grid[6] = (ImageView) findViewById(R.id.r2c2);
-        grid[7] = (ImageView) findViewById(R.id.r2c3);
-        grid[8] = (ImageView) findViewById(R.id.r2c4);
-        grid[9] = (ImageView) findViewById(R.id.r2c5);
+        grid[5] = findViewById(R.id.r2c1);
+        grid[6] = findViewById(R.id.r2c2);
+        grid[7] = findViewById(R.id.r2c3);
+        grid[8] = findViewById(R.id.r2c4);
+        grid[9] = findViewById(R.id.r2c5);
 
-        grid[10] = (ImageView) findViewById(R.id.r3c1);
-        grid[11] = (ImageView) findViewById(R.id.r3c2);
-        grid[12] = (ImageView) findViewById(R.id.r3c3);
-        grid[13] = (ImageView) findViewById(R.id.r3c4);
-        grid[14] = (ImageView) findViewById(R.id.r3c5);
+        grid[10] = findViewById(R.id.r3c1);
+        grid[11] = findViewById(R.id.r3c2);
+        grid[12] = findViewById(R.id.r3c3);
+        grid[13] = findViewById(R.id.r3c4);
+        grid[14] = findViewById(R.id.r3c5);
 
-        grid[15] = (ImageView) findViewById(R.id.r4c1);
-        grid[16] = (ImageView) findViewById(R.id.r4c2);
-        grid[17] = (ImageView) findViewById(R.id.r4c3);
-        grid[18] = (ImageView) findViewById(R.id.r4c4);
-        grid[19] = (ImageView) findViewById(R.id.r4c5);
+        grid[15] = findViewById(R.id.r4c1);
+        grid[16] = findViewById(R.id.r4c2);
+        grid[17] = findViewById(R.id.r4c3);
+        grid[18] = findViewById(R.id.r4c4);
+        grid[19] = findViewById(R.id.r4c5);
 
-        grid[20] = (ImageView) findViewById(R.id.r5c1);
-        grid[21] = (ImageView) findViewById(R.id.r5c2);
-        grid[22] = (ImageView) findViewById(R.id.r5c3);
-        grid[23] = (ImageView) findViewById(R.id.r5c4);
-        grid[24] = (ImageView) findViewById(R.id.r5c5);
+        grid[20] = findViewById(R.id.r5c1);
+        grid[21] = findViewById(R.id.r5c2);
+        grid[22] = findViewById(R.id.r5c3);
+        grid[23] = findViewById(R.id.r5c4);
+        grid[24] = findViewById(R.id.r5c5);
 
         //start all at 0 (white)
         for(int i = 0; i < DIMENSIONS; i++){
