@@ -1,12 +1,19 @@
 package com.example.claudiaalamillo.nonogamesproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +23,9 @@ public class HardLevelActivity extends AppCompatActivity {
     private static final int COLUMNS = 15, ROWS = 15;
     private static final int DIMENSIONS = ROWS * COLUMNS;
     private int[] solution = new int[DIMENSIONS];
+    private Button goBack;
+    private Button levelSelection;
+    private Button mainMenu;
 
     //current state of the board, initialize to 0
     private int[] currentState = new int[DIMENSIONS];
@@ -34,6 +44,15 @@ public class HardLevelActivity extends AppCompatActivity {
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hard_level);
+
+        goBack = findViewById(R.id.backButton);
+        goBack.setOnClickListener (new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                goToHardLibrary();
+            }
+        } );
 
         //get puzzle id
         Bundle b = getIntent().getExtras();
@@ -361,12 +380,13 @@ public class HardLevelActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     flip(finalI);
                     if( isSolved()){
-                        Context context = getApplicationContext();
-                        CharSequence text = "SOLVED!";
-                        int duration = Toast.LENGTH_SHORT;
-
-                        Toast toast = Toast.makeText(context, text, duration);
-                        toast.show();
+//                        Context context = getApplicationContext();
+//                        CharSequence text = "SOLVED!";
+//                        int duration = Toast.LENGTH_SHORT;
+//
+//                        Toast toast = Toast.makeText(context, text, duration);
+//                        toast.show();
+                        showPopupWindow();
                     }
                 }
             });
@@ -385,6 +405,10 @@ public class HardLevelActivity extends AppCompatActivity {
         }
     }
 
+    private void goToHardLibrary()
+    {
+        startActivity(new Intent(this, HardLibraryActivity.class));
+    }
 
     //check if the board is solved by comparing the pixelList array with solution array
     private boolean isSolved(){
@@ -426,6 +450,54 @@ public class HardLevelActivity extends AppCompatActivity {
                 this.solution = res.getIntArray(R.array.hard_puzzle_4);
                 break;
         }
+    }
+
+    private void showPopupWindow()
+    {
+        ConstraintLayout hardLayout = (ConstraintLayout) findViewById(R.id.activity_hard_level);
+
+        LayoutInflater li = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+        View popupView = li.inflate(R.layout.activity_solved_popup_window, null);
+
+        // creating actual popup window
+        int width = 1000;
+        int height = 500;
+//        boolean dismiss = true;
+        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, false);
+
+        // display popup
+        popupWindow.showAtLocation(hardLayout, Gravity.CENTER, 0, 0);
+
+        levelSelection = popupView.findViewById(R.id.levelSelectionSPW);
+        mainMenu = popupView.findViewById(R.id.mainMenuButtonSPW);
+
+        levelSelection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HardLevelActivity.this, LevelSelection.class);
+                HardLevelActivity.this.startActivity(intent);
+            }
+        });
+        mainMenu.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(HardLevelActivity.this, MainMenuActivity.class);
+                HardLevelActivity.this.startActivity(intent);
+            }
+        });
+
+        // allow user to dismiss the window when touched
+//        popupView.setOnTouchListener(new View.OnTouchListener()
+//        {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent me)
+//            {
+//                popupWindow.dismiss();
+//                return true;
+//            }
+//        });
     }
 }
 

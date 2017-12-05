@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MediumLibraryActivity extends AppCompatActivity {
@@ -17,6 +18,8 @@ public class MediumLibraryActivity extends AppCompatActivity {
         ImageButton board2 = findViewById(R.id.imageButton2);
         ImageButton board3 = findViewById(R.id.imageButton3);
         ImageButton board4 = findViewById(R.id.imageButton4);
+
+        Button backButton = findViewById(R.id.backButton);
 
         board1.setOnClickListener (new View.OnClickListener() {
             @Override
@@ -43,6 +46,14 @@ public class MediumLibraryActivity extends AppCompatActivity {
             }
         } );
 
+        backButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                goToLevelSelection();
+            }
+        });
     }
 
     private void goToMediumLevelActivity(int puzzle_num){
@@ -53,6 +64,12 @@ public class MediumLibraryActivity extends AppCompatActivity {
         b.putInt("id", puzzle_num);
         intent.putExtras(b);
 
+        startActivity(intent);
+    }
+
+    private void goToLevelSelection()
+    {
+        Intent intent = new Intent(this, LevelSelection.class);
         startActivity(intent);
     }
 }

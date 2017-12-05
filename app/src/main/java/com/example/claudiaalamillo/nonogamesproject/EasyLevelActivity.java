@@ -22,7 +22,6 @@ public class EasyLevelActivity extends AppCompatActivity {
     private static final int COLUMNS = 5, ROWS = 5;
     private static final int DIMENSIONS = ROWS * COLUMNS;
     private int[] solution = new int[DIMENSIONS];
-    private PopupWindow pw;
     private Button levelSelection;
     private Button mainMenu;
     private Button goBack;
@@ -207,7 +206,7 @@ public class EasyLevelActivity extends AppCompatActivity {
         int width = 1000;
         int height = 500;
         boolean dismiss = true;
-        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, dismiss);
+        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, false);
 
         // display popup
         popupWindow.showAtLocation(easyLayout, Gravity.CENTER, 0, 0);
@@ -227,20 +226,20 @@ public class EasyLevelActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                popupWindow.dismiss();
+                Intent intent = new Intent(EasyLevelActivity.this, MainMenuActivity.class);
+                EasyLevelActivity.this.startActivity(intent);
             }
         });
 
         // allow user to dismiss the window when touched
-        popupView.setOnTouchListener(new View.OnTouchListener()
-        {
-            @Override
-            public boolean onTouch(View v, MotionEvent me)
-            {
-                popupWindow.dismiss();
-                return true;
-            }
-        });
-
+//        popupView.setOnTouchListener(new View.OnTouchListener()
+//        {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent me)
+//            {
+//                popupWindow.dismiss();
+//                return true;
+//            }
+//        });
     }
 }

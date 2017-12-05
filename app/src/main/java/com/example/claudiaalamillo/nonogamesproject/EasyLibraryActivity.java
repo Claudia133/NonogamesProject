@@ -27,6 +27,8 @@ public class EasyLibraryActivity extends AppCompatActivity {
         ImageButton board3 = findViewById(R.id.imageButton3);
         ImageButton board4 = findViewById(R.id.imageButton4);
 
+        Button backButton = findViewById(R.id.backButton);
+
         board1.setOnClickListener (new View.OnClickListener()
         {
             @Override
@@ -56,7 +58,14 @@ public class EasyLibraryActivity extends AppCompatActivity {
             }
         } );
 
-
+        backButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                goToLevelSelection();
+            }
+        });
     }
 
     private void goToEasyLevelActivity(int puzzle_num)
@@ -68,6 +77,12 @@ public class EasyLibraryActivity extends AppCompatActivity {
         b.putInt("id", puzzle_num);
         intent.putExtras(b);
 
+        startActivity(intent);
+    }
+
+    private void goToLevelSelection()
+    {
+        Intent intent = new Intent(this, LevelSelection.class);
         startActivity(intent);
     }
 }

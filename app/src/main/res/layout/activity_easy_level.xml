@@ -45,5 +45,15 @@
         app:layout_constraintBottom_toTopOf="@id/easygrid"
         app:layout_constraintRight_toRightOf="parent"/>
 
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Go Back "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
 
