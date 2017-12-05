@@ -10,99 +10,89 @@
         android:id="@+id/r1_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 1" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/r2_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 2" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/r3_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 3" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/r4_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 4" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/r5_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 5" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/r6_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 6" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/r7_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 7" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/r8_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 8" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/r9_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 9" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/r10_hints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|right"
+        android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="row 10" />
+        android:textSize="20sp" />
 </LinearLayout>
