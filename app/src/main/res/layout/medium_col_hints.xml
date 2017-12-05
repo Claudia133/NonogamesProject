@@ -13,7 +13,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n1" />
 
     <TextView
@@ -23,7 +23,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n2" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n3" />
 
     <TextView
@@ -43,7 +43,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n4" />
 
     <TextView
@@ -53,7 +53,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n5" />
 
     <TextView
@@ -63,7 +63,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n6" />
 
     <TextView
@@ -73,7 +73,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n7" />
 
     <TextView
@@ -83,7 +83,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n8" />
 
     <TextView
@@ -93,7 +93,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n9" />
 
     <TextView
@@ -103,7 +103,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:text="c\no\nl\n \n10" />
 
 </LinearLayout>

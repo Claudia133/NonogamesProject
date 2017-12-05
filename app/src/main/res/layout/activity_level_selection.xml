@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteX="0dp">
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -21,56 +21,56 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/easyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Easy"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintRight_toRightOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/mediumButton"
+        app:layout_constraintRight_toRightOf="@+id/mediumButton"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/button9" />
+        app:layout_constraintLeft_toLeftOf="@+id/mediumButton" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/mediumButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medium"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
-        app:layout_constraintRight_toRightOf="@+id/button10"
+        app:layout_constraintBottom_toTopOf="@+id/hardButton"
+        app:layout_constraintRight_toRightOf="@+id/hardButton"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="2dp"
-        app:layout_constraintLeft_toLeftOf="@+id/button10" />
+        app:layout_constraintLeft_toLeftOf="@+id/hardButton" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/hardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hard"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/button11"
-        app:layout_constraintRight_toRightOf="@+id/button11"
+        app:layout_constraintBottom_toTopOf="@+id/timedButton"
+        app:layout_constraintRight_toRightOf="@+id/timedButton"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/button11" />
+        app:layout_constraintLeft_toLeftOf="@+id/timedButton" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/timedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Timed"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/button12"
-        app:layout_constraintRight_toRightOf="@+id/button12"
+        app:layout_constraintBottom_toTopOf="@+id/customButton"
+        app:layout_constraintRight_toRightOf="@+id/customButton"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/button12" />
+        app:layout_constraintLeft_toLeftOf="@+id/customButton" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/customButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Custom"
