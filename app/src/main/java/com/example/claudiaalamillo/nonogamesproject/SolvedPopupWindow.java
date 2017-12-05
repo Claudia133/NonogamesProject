@@ -17,22 +17,22 @@ public class SolvedPopupWindow extends AppCompatActivity {
         Button mainMenuButton = (Button) findViewById(R.id.mainMenuButtonSPW);
 
         // comment
-        levelSelectionButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                goToLevelSelection();
-            }
-        });
-        mainMenuButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                goToMainMenu();
-            }
-        });
+//        levelSelectionButton.setOnClickListener(new View.OnClickListener()
+//        {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                goToLevelSelection();
+//            }
+//        });
+//        mainMenuButton.setOnClickListener(new View.OnClickListener()
+//        {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                goToMainMenu();
+//            }
+//        });
     }
 
     private void goToLevelSelection()

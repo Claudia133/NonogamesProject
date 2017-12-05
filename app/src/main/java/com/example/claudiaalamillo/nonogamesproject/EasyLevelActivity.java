@@ -23,6 +23,9 @@ public class EasyLevelActivity extends AppCompatActivity {
     private static final int DIMENSIONS = ROWS * COLUMNS;
     private int[] solution = new int[DIMENSIONS];
     private PopupWindow pw;
+    private Button levelSelection;
+    private Button mainMenu;
+    private Button goBack;
 
     //current state of the board, initialize to 0
     private int[] currentState = new int[DIMENSIONS];
@@ -42,8 +45,7 @@ public class EasyLevelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_level);
 
-        Button goBack = findViewById(R.id.backButton);
-
+        goBack = findViewById(R.id.backButton);
         goBack.setOnClickListener (new View.OnClickListener()
         {
             @Override
@@ -127,12 +129,6 @@ public class EasyLevelActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     flip(finalI);
                     if( isSolved()){
-//                        Context context = getApplicationContext();
-//                        CharSequence text = "SOLVED!";
-//                        int duration = Toast.LENGTH_SHORT;
-//
-//                        Toast toast = Toast.makeText(context, text, duration);
-//                        toast.show();
                         showPopupWindow();
                     }
                 }
@@ -207,13 +203,6 @@ public class EasyLevelActivity extends AppCompatActivity {
         LayoutInflater li = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = li.inflate(R.layout.activity_solved_popup_window, null);
 
-        SolvedPopupWindow spw = new SolvedPopupWindow();
-
-        Button levelSelection = findViewById(R.id.levelSelectionSPW);
-        Button mainMenu = findViewById(R.id.mainMenuButtonSPW);
-
-//        levelSelection.setOnClickListener(this);
-
         // creating actual popup window
         int width = 1000;
         int height = 500;
@@ -223,14 +212,14 @@ public class EasyLevelActivity extends AppCompatActivity {
         // display popup
         popupWindow.showAtLocation(easyLayout, Gravity.CENTER, 0, 0);
 
+        levelSelection = popupView.findViewById(R.id.levelSelectionSPW);
+        mainMenu = popupView.findViewById(R.id.mainMenuButtonSPW);
+
         levelSelection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                SolvedPopupWindow.class.
-//                Intent intent = new Intent();
-//                intent.setClass(this, LevelSelection.class);
-//                startActivity(intent);
-                startActivity(new Intent(EasyLevelActivity.this, LevelSelection.class));
+                Intent intent = new Intent(EasyLevelActivity.this, LevelSelection.class);
+                EasyLevelActivity.this.startActivity(intent);
             }
         });
         mainMenu.setOnClickListener(new View.OnClickListener()
@@ -238,7 +227,7 @@ public class EasyLevelActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-
+                popupWindow.dismiss();
             }
         });
 
