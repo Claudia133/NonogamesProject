@@ -8,7 +8,7 @@
     android:background="?attr/backgroundColor">
     <Button
         android:id="@+id/black_theme_button"
-        android:text="Dark"
+        android:text="@string/dark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#2d2d2d"
@@ -16,7 +16,7 @@
         android:layout_margin="10dp"/>
     <Button
         android:id="@+id/amethyst_theme_button"
-        android:text="Amethyst"
+        android:text="@string/amethyst"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ba94e0"
@@ -24,7 +24,7 @@
         android:layout_margin="10dp" />
     <Button
         android:id="@+id/android_green_theme_button"
-        android:text="Android Green"
+        android:text="@string/android_green"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#94b52f"
@@ -32,7 +32,7 @@
         android:layout_margin="10dp" />
     <Button
         android:id="@+id/antique_ruby_theme_button"
-        android:text="Antique Ruby"
+        android:text="@string/antique_ruby"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#c6435a"
@@ -40,7 +40,7 @@
         android:layout_margin="10dp" />
     <Button
         android:id="@+id/axolotl_theme_button"
-        android:text="Axolotl"
+        android:text="@string/axolotl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#63775b"
@@ -48,7 +48,7 @@
         android:layout_margin="10dp" />
     <Button
         android:id="@+id/amazonite_theme_button"
-        android:text="Amazonite"
+        android:text="@string/amazonite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#099b8c"

@@ -3,4 +3,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="prefs_theme_key">theme</string>
+    <string name="amazonite">Amazonite</string>
+    <string name="axolotl">Axolotl</string>
+    <string name="antique_ruby">Antique Ruby</string>
+    <string name="android_green">Android Green</string>
+    <string name="amethyst">Amethyst</string>
+    <string name="dark">Dark</string>
 </resources>
