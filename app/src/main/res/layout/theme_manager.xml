@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:background="?attr/backgroundColor">
+    <Button
+        android:id="@+id/black_theme_button"
+        android:text="Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2d2d2d"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/amethyst_theme_button"
+        android:text="Amethyst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ba94e0"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp" />
+    <Button
+        android:id="@+id/android_green_theme_button"
+        android:text="Android Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#94b52f"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp" />
+    <Button
+        android:id="@+id/antique_ruby_theme_button"
+        android:text="Antique Ruby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6435a"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp" />
+    <Button
+        android:id="@+id/axolotl_theme_button"
+        android:text="Axolotl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#63775b"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp" />
+    <Button
+        android:id="@+id/amazonite_theme_button"
+        android:text="Amazonite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#099b8c"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp" />
+</LinearLayout>

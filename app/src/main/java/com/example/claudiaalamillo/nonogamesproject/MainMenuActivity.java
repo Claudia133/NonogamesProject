@@ -10,6 +10,7 @@ public class MainMenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ThemeManager.updateTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         Button playButton         = (Button) findViewById(R.id.button1);
@@ -34,6 +35,11 @@ public class MainMenuActivity extends AppCompatActivity {
             public void onClick(View v) {goToCreatePuzzleActivity();
             }
         } );
+        changeThemeButton.setOnClickListener  (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {goToThemeManagerActivity();
+            }
+        } );
     }
 
     private void goToLevelSelectionActivity()
@@ -51,6 +57,12 @@ public class MainMenuActivity extends AppCompatActivity {
     private void goToCreatePuzzleActivity()
     {
         Intent intent = new Intent(this, CreatePuzzle.class);
+        startActivity(intent);
+    }
+
+    private void goToThemeManagerActivity()
+    {
+        Intent intent = new Intent(this, ThemeManager.class);
         startActivity(intent);
     }
 }

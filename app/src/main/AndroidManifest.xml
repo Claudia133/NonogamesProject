@@ -26,6 +26,7 @@
         <activity android:name=".EasyLevelActivity" />
         <activity android:name=".MediumLevelActivity" />
         <activity android:name=".HardLevelActivity"/>
+        <activity android:name=".ThemeManager"/>
     </application>
 
 </manifest>

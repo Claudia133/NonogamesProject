@@ -18,6 +18,7 @@ public class EasyLibraryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ThemeManager.updateTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_library);
 

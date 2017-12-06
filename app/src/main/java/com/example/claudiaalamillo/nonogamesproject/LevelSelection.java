@@ -11,6 +11,7 @@ public class LevelSelection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        ThemeManager.updateTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_selection);
         Button goBackButton = (Button) findViewById(R.id.backButton);

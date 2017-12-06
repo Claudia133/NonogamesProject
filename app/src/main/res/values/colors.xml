@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    // Black
+    <color name="colorPrimaryBlack">#2d2d2d</color>
+    <color name="windowBackgroundBlack">#848484</color>
+
+    // Amethyst
+    // #9966CC
+    <color name="colorPrimaryAmethyst">#d5b4f7</color>
+    <color name="colorPrimaryDarkAmethyst">#9966CC</color>
+    <color name="windowBackgroundAmethyst">#765599</color>
+
+    // Android Green
+    // #A4C639
+    <color name="colorPrimaryAndroidGreen">#c9f24b</color>
+    <color name="colorPrimaryDarkAndroidGreen">#82a80f</color>
+    <color name="windowBackgroundAndroidGreen">#4e6609</color>
+
+    // Antique Ruby
+    // #841B2D
+    <color name="colorPrimaryAntiqueRuby">#c6435a</color>
+    <color name="colorPrimaryDarkAntiqueRuby">#841B2D</color>
+    <color name="windowBackgroundAntiqueRuby">#82061c</color>
+
+    // Axolotl
+    // #63775b
+    <color name="colorPrimaryAxolotl">#9fba94</color>
+    <color name="colorPrimaryDarkAxolotl">#53684b</color>
+    <color name="windowBackgroundAxolotl">#44593c</color>
+
+    // Amazonite
+    // #00C4B0
+    <color name="colorPrimaryAmazonite">#5addd0</color>
+    <color name="colorPrimaryDarkAmazonite">#099b8c</color>
+    <color name="windowBackgroundAmazonite">#087a6e</color>
 </resources>

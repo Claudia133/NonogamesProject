@@ -1,11 +1,46 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="android:colorBackground">@color/windowBackgroundBlack</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/windowBackgroundBlack</item>
+        <item name="backgroundColor">@color/windowBackgroundBlack</item>
+    </style>
+    <style name="AppTheme.Amethyst" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDarkAmethyst</item>
+        <item name="android:colorBackground">@color/colorPrimaryAmethyst</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkAmethyst</item>
+        <item name="colorAccent">@color/windowBackgroundAmethyst</item>
+        <item name="backgroundColor">@color/colorPrimaryAmethyst</item>
+    </style>
+    <style name="AppTheme.Android_Green" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDarkAndroidGreen</item>
+        <item name="android:colorBackground">@color/colorPrimaryAndroidGreen</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkAndroidGreen</item>
+        <item name="colorAccent">@color/windowBackgroundAndroidGreen</item>
+        <item name="backgroundColor">@color/colorPrimaryAndroidGreen</item>
+    </style>
+    <style name="AppTheme.Antique_Ruby" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDarkAntiqueRuby</item>
+        <item name="android:colorBackground">@color/colorPrimaryAntiqueRuby</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkAntiqueRuby</item>
+        <item name="colorAccent">@color/windowBackgroundAntiqueRuby</item>
+        <item name="backgroundColor">@color/colorPrimaryAntiqueRuby</item>
+    </style>
+    <style name="AppTheme.Axolotl" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDarkAxolotl</item>
+        <item name="android:colorBackground">@color/colorPrimaryAxolotl</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkAxolotl</item>
+        <item name="colorAccent">@color/windowBackgroundAxolotl</item>
+        <item name="backgroundColor">@color/colorPrimaryAxolotl</item>
+    </style>
+    <style name="AppTheme.Amazonite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDarkAmazonite</item>
+        <item name="android:colorBackground">@color/colorPrimaryAmazonite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkAmazonite</item>
+        <item name="colorAccent">@color/windowBackgroundAmazonite</item>
+        <item name="backgroundColor">@color/colorPrimaryAmazonite</item>
     </style>
 
 </resources>

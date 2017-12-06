@@ -49,6 +49,7 @@ public class MediumLevelActivity extends AppCompatActivity {
     TextView opt_moves, user_moves;
 
     public void onCreate (Bundle savedInstanceState) {
+        ThemeManager.updateTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medium_level);
 

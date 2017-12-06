@@ -10,6 +10,7 @@ public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ThemeManager.updateTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Button goBackButton = (Button) findViewById(R.id.button6);
