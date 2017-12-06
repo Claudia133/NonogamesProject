@@ -41,6 +41,13 @@ public class HardLevelActivity extends AppCompatActivity {
     String[] row_hints = new String[ROWS];
     String[] col_hints = new String[COLUMNS];
 
+    //optimal number of moves
+    private int optimal_moves = 0;
+    private int user_total_moves = 0;
+
+    //optimal moves and user moves to display
+    TextView opt_moves, user_moves;
+
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hard_level);
@@ -63,6 +70,17 @@ public class HardLevelActivity extends AppCompatActivity {
 
         //see method
         setHintsAndSolution(puzzle_num);
+
+        //can set this now that we have the solution
+        setOptimal_moves();
+
+        //connect optimal and user textviews
+        opt_moves = findViewById(R.id.optimal);
+        user_moves = findViewById(R.id.user);
+
+        //set optimal
+        opt_moves.setText("Optimal:\n" + this.optimal_moves);
+        user_moves.setText("Current:\n" + this.user_total_moves);
 
         //connect row hint variables with id's in xml
         r1 = findViewById(R.id.r1_hints);
@@ -379,6 +397,7 @@ public class HardLevelActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     flip(finalI);
+                    user_moves.setText("Current:\n" + user_total_moves);
                     if( isSolved()){
 //                        Context context = getApplicationContext();
 //                        CharSequence text = "SOLVED!";
@@ -402,6 +421,15 @@ public class HardLevelActivity extends AppCompatActivity {
         else{ //if it's 1
             grid[index].setImageResource(R.drawable.white);
             currentState[index] = 0;
+        }
+        user_total_moves++;
+    }
+
+    private void setOptimal_moves(){
+        for(int i = 0; i < DIMENSIONS; i++){
+            if(this.solution[i] == 1){
+                this.optimal_moves++;
+            }
         }
     }
 
@@ -463,10 +491,10 @@ public class HardLevelActivity extends AppCompatActivity {
         int width = 1000;
         int height = 500;
 //        boolean dismiss = true;
-        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, false);
+        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, true);
 
         // display popup
-        popupWindow.showAtLocation(hardLayout, Gravity.CENTER, 0, 0);
+        popupWindow.showAtLocation(hardLayout, Gravity.CENTER, 0, -250);
 
         levelSelection = popupView.findViewById(R.id.levelSelectionSPW);
         mainMenu = popupView.findViewById(R.id.mainMenuButtonSPW);

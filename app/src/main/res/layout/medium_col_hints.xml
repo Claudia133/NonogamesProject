@@ -13,7 +13,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/c2_hints"
@@ -22,7 +22,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/c3_hints"
@@ -31,7 +31,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/c4_hints"
@@ -40,7 +40,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/c5_hints"
@@ -49,7 +49,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/c6_hints"
@@ -58,7 +58,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/c7_hints"
@@ -67,7 +67,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/c8_hints"
@@ -76,7 +76,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/c9_hints"
@@ -85,7 +85,7 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/c10_hints"
@@ -94,6 +94,6 @@
         android:gravity="center_horizontal|bottom"
         android:layout_weight="1"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="17sp" />
 
 </LinearLayout>

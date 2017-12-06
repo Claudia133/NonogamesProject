@@ -7,8 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="60dp"
-    android:paddingEnd="30dp"
-    android:paddingStart="30dp"
+    android:paddingEnd="27dp"
+    android:paddingStart="27dp"
     tools:context="com.example.claudiaalamillo.nonogamesproject.HardLevelActivity"
     >
 
@@ -16,8 +16,8 @@
     <include
         android:id="@+id/hardgrid"
         layout="@layout/hard_grid"
-        android:layout_width="260dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="272dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
         android:id="@+id/include"
         layout="@layout/hard_row_hints"
         android:layout_width="80dp"
-        android:layout_height="260dp"
+        android:layout_height="250dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="272dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,7 +37,7 @@
     <include
         android:id="@+id/include"
         layout="@layout/hard_col_hints"
-        android:layout_width="260dp"
+        android:layout_width="250dp"
         android:layout_height="191dp"
         tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="83dp"
@@ -54,6 +54,31 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/optimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/guideline1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goodbye"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/guideline1"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".15" />
 
 </android.support.constraint.ConstraintLayout>
 
