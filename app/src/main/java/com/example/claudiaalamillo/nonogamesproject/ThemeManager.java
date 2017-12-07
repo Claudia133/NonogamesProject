@@ -17,6 +17,14 @@ public class ThemeManager extends AppCompatActivity implements View.OnClickListe
         updateTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.theme_manager);
+        findViewById(R.id.backButton).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                onBackPressed();
+            }
+        });
         findViewById(R.id.black_theme_button).setOnClickListener(this);
         findViewById(R.id.amethyst_theme_button).setOnClickListener(this);
         findViewById(R.id.android_green_theme_button).setOnClickListener(this);

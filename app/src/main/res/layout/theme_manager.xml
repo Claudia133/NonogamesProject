@@ -6,6 +6,15 @@
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
     android:background="?attr/backgroundColor">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="0dp"
+        android:text="Go Back" />
+
     <Button
         android:id="@+id/black_theme_button"
         android:text="@string/dark"
@@ -38,20 +47,22 @@
         android:background="#c6435a"
         android:textColor="@android:color/white"
         android:layout_margin="10dp" />
+
     <Button
         android:id="@+id/axolotl_theme_button"
-        android:text="@string/axolotl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="#63775b"
-        android:textColor="@android:color/white"
-        android:layout_margin="10dp" />
+        android:text="@string/axolotl"
+        android:textColor="@android:color/white" />
+
     <Button
         android:id="@+id/amazonite_theme_button"
-        android:text="@string/amazonite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="#099b8c"
-        android:textColor="@android:color/white"
-        android:layout_margin="10dp" />
+        android:text="@string/amazonite"
+        android:textColor="@android:color/white" />
 </LinearLayout>
