@@ -14,8 +14,8 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        Button backButton = (Button) findViewById(R.id.button14);
-        Button toMainMenuButton = (Button) findViewById(R.id.button15);
+        Button backButton = findViewById(R.id.backButton);
+        Button doneButton = findViewById(R.id.doneButton);
 
         backButton.setOnClickListener (new View.OnClickListener() {
             @Override
@@ -23,7 +23,7 @@ public class SignUp extends AppCompatActivity {
                 goToLogin();
             }
         } );
-        toMainMenuButton.setOnClickListener (new View.OnClickListener() {
+        doneButton.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToMainMenu();
